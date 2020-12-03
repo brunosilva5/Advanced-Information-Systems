@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Author="diogo" CommentTableSortAscending="false" CommentTableSortColumn="Date Time" Description="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 12px }&#10;      --&gt;&#10;    &lt;/style&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;" DocumentationType="html" ExportedFromDifferentName="false" ExporterVersion="16.1.1" Name="untitled" TextualAnalysisHighlightOptionCaseSensitive="false" UmlVersion="2.x" Xml_structure="simple">
+	<ProjectInfo>
+		<OrmInfo DefaultDatabase="1" SupportDatabases="0"/>
+		<LogicalView/>
+		<ProjectOptions>
+			<DiagramOptions ActivityDiagramControlFlowDisplayOption="\u0000" ActivityDiagramShowActionCallBehaviorOption="\u0000" ActivityDiagramShowActivityEdgeWeight="true" ActivityDiagramShowObjectNodeType="true" ActivityDiagramShowPartitionHandle="\u0000" AddDataStoresExtEntitiesToDecomposedDFD="\u0002" AlignColumnProperties="true" AllowConfigShowInOutFlowButtonsInDataFlowDiagram="false" AutoGenerateRoleName="false" AutoSetAttributeType="true" AutoSetColumnType="true" AutoSyncRoleName="true" BpdAutoStretchPools="true" BpdConnectGatewayWithFlowObjectInDifferentPool="\u0000" BpdDefaultConnectionPointStyle="\u0001" BpdDefaultConnectorStyle="\u0005" BpdDhowIdOption="\u0000" BpdShowActivitiesTypeIcon="true" BusinessProcessDiagramDefaultLanguage="English" ClassVisibilityStyle="\u0001" ConnectorLabelOrientation="\u0000" CreateOneMessagePerDirection="true" DecisionMergeNodeConnectionPointStyle="\u0000" DefaultAssociationEndNavigable="\u0001" DefaultAssociationEndVisibility="\u0000" DefaultAssociationShowFromMultiplicity="true" DefaultAssociationShowFromRoleName="true" DefaultAssociationShowFromRoleVisibility="true" DefaultAssociationShowStereotypes="true" DefaultAssociationShowToMultiplicity="true" DefaultAssociationShowToRoleName="true" DefaultAssociationShowToRoleVisibility="true" DefaultAttributeMultiplicity="false" DefaultAttributeType="" DefaultAttributeVisibility="\u0001" DefaultClassAttributeMultiplicity="" DefaultClassAttributeMultiplicityOrdered="false" DefaultClassAttributeMultiplicityUnique="true" DefaultClassInterfaceBall="false" DefaultClassVisibility="\u0004" DefaultColumnType="integer(10)" DefaultConnectionPointStyle="\u0000" DefaultConnectorStyle="\u0001" DefaultDiagramBackground="rgb(255, 255, 255)" DefaultDisplayAsRobustnessAnalysisIcon="true" DefaultDisplayAsRobustnessAnalysisIconInSequenceDiagram="true" DefaultDisplayAsStereotypeIcon="false" DefaultFontColor="rgb(0, 0, 0)" DefaultGenDiagramTypeFromScenario="\u0000" DefaultHtmlDocFontColor="rgb(0, 0, 0)" DefaultLineJumps="\u0000" DefaultOperationVisibility="\u0004" DefaultParameterDirection="\u0002" DefaultShowAttributeInitialValue="true" DefaultShowAttributeOption="\u0001" DefaultShowClassMemberStereotype="true" DefaultShowDirection="false" DefaultShowMultiplicityConstraints="false" DefaultShowOperationOption="\u0001" DefaultShowOperationSignature="true" DefaultShowOrderedMultiplicityConstraint="true" DefaultShowOwnedAssociationEndAsAttribute="true" DefaultShowOwner="false" DefaultShowOwnerSkipModelInFullyQualifiedOwnerSignature="true" DefaultShowReceptionOption="\u0001" DefaultShowTemplateParameter="true" DefaultShowTypeOption="\u0001" DefaultShowUniqueMultiplicityConstraint="true" DefaultTypeOfSubProcess="\u0000" DefaultWrapClassMember="false" DrawTextAnnotationOpenRectangleFollowConnectorEnd="true" EnableMinimumSize="true" EntityColumnConstraintsPresentation="\u0002" ErdIndexNumOfDigits="-1" ErdIndexPattern="{table_name}" ErdIndexPatternSyncAutomatically="true" ErdManyToManyJoinTableDelimiter="_" EtlTableDiagramFontSize="14" ExpandedSubProcessDiagramContent="\u0001" ForeignKeyArrowHeadSize="\u0002" ForeignKeyConnectorEndPointAssociatedColumn="false" ForeignKeyNamePattern="{reference_table_name}{reference_column_name}" ForeignKeyNamePatternCaseHandling="0" ForeignKeyRelationshipPattern="{association_name}" FractionalMetrics="true" GeneralizationSetNotation="\u0001" GraphicAntiAliasing="true" GridDiagramFontSize="14" LineJumpSize="\u0000" ModelElementNameAlignment="\u0004" MultipleLineClassName="\u0001" PaintConnectorThroughLabel="false" PointConnectorEndToCompartmentMember="true" PrimaryKeyConstraintPattern="" PrimaryKeyNamePattern="ID" RenameConstructorAfterRenameClass="\u0000" RenameExtensionPointToFollowExtendUseCase="\u0000" ShapeAutoFitSize="false" ShowActivationsInSequenceDiagram="true" ShowActivityStateNodeCaption="524287" ShowArtifactOption="\u0002" ShowAssociatedDiagramNameOfInteraction="false" ShowAssociationRoleStereotypes="true" ShowAttributeGetterSetter="false" ShowBSElementCode="true" ShowClassEmptyCompartments="false" ShowColumnDefaultValue="false" ShowColumnNullable="true" ShowColumnType="true" ShowColumnUniqueConstraintName="false" ShowColumnUserType="false" ShowComponentOption="\u0002" ShowExtraColumnProperties="true" ShowInOutFlowButtonsInDataFlowDiagram="false" ShowInOutFlowsInSubLevelDiagram="true" ShowMessageOperationSignatureForSequenceAndCommunicationDiagram="true" ShowMessageStereotypeInSequenceAndCommunicationDiagram="true" ShowNumberInCollaborationDiagram="true" ShowNumberInSequenceDiagram="true" ShowPackageNameStyle="\u0000" ShowParameterNameInOperationSignature="true" ShowRowGridLineWithinCompClassDiagram="false" ShowRowGridLineWithinCompERD="true" ShowRowGridLineWithinORMDiagram="true" ShowSchemaNameInERD="true" ShowTransitionTrigger="\u0000" ShowUseCaseExtensionPoint="true" ShowUseCaseID="false" SnapConnectorsAfterZoom="false" StateShowParametersOfInternalActivities="false" StateShowPrePostConditionAndBodyOfInternalActivities="true" StopTargetLifelineOnCreateDestroyMessage="\u0002" SupportHtmlTaggedValue="false" SupportMultipleLineAttribute="true" SuppressImpliedMultiplicityForAttributeAssociationEnd="false" SyncAssociationNameWithAssociationClass="\u0000" SyncAssociationRoleNameWithReferencedAttributeName="true" SyncDocOfInterfaceToSubClass="\u0000" TextAntiAliasing="true" TextualAnalysisGenerateRequirementTextOption="\u0001" TextualAnalysisHighlightOption="\u0000" UnnamedIndexPattern="{table_name}_{column_name}" UseStateNameTab="false" WireflowDiagramDevice="0" WireflowDiagramShowActiveFlowLabel="true" WireflowDiagramTheme="0" WireflowDiagramWireflowShowPreview="true" WireflowDiagramWireflowShowScreenId="true">
+				<DefaultHtmlDocFont Family="Dialog" Size="12" Style="0"/>
+			</DiagramOptions>
+			<GeneralOptions ConfirmSubLevelIdWithDot="true" QuickAddGlossaryTermParentModelId="default"/>
+			<InstantReverseOptions CalculateGeneralizationAndRealization="false" CreateShapeForParentModelOfDraggedClassPackage="false" ReverseGetterSetter="\u0000" ReverseOperationImplementation="false" ShowPackageForNewDiagram="\u0001" ShowPackageOwner="\u0000"/>
+			<ModelQualityOptions EnableModelQualityChecking="false"/>
+			<ORMOptions DecimalPrecision="19" DecimalScale="0" ExportCommentToDatabase="true" FormattedSQL="false" GenerateAssociationWithAttribute="false" GenerateDiagramFromORMWizards="true" GetterSetterVisibility="\u0000" IdGeneratorType="native" MappingFileColumnOrder="\u0000" NumericToClassType="\u0000" QuoteSQLIdentifier="\u0000" RecreateShapeWhenSync="false" SyncToClassDiagramAttributeName="\u0001" SyncToClassDiagramAttributeNamePrefix="" SyncToClassDiagramAttributeNameSuffix="" SyncToClassDiagramClassName="\u0000" SyncToClassDiagramClassNamePrefix="" SyncToClassDiagramClassNameSuffix="" SyncToERDColumnName="\u0000" SyncToERDColumnNamePrefix="" SyncToERDColumnNameSuffix="" SyncToERDTableName="\u0004" SyncToERDTableNamePrefix="" SyncToERDTableNameSuffix="" SynchronizeDefaultValueToColumn="false" SynchronizeName="\u0002" TablePerSubclassFKMapping="\u0000" UpperCaseSQL="true" UseDefaultDecimal="true" WrappingServletRequest="\u0001"/>
+			<RequirementDiagramOptions DefaultWrapMember="true" ShowAttributes="\u0001" SupportHTMLAttribute="false"/>
+			<StateCodeEngineOptions AutoCreateInitialStateInStateDiagram="true" AutoCreateTransitionMethods="true" DefaultInitialStateLocationX="-1" DefaultInitialStateLocationY="-1" GenerateDebugMessage="false" GenerateSample="true" GenerateTryCatch="true" Language="\u0000" RegenerateTransitionMethods="false" SyncTransitionMethods="true"/>
+			<WarningOptions CreateORMClassInDefaultPackage="true"/>
+			<PORepository>
+				<POUserIDFormats>
+					<POUserIDFormat Digits="2" Guid="false" Id="1UrhFG6GAqACcwzo" LastNumericValue="0" ModelType="BPMNElement" Prefix="BP" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="NUrhFG6GAqACcwzp" LastNumericValue="0" ModelType="Actor" Prefix="AC" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="NUrhFG6GAqACcwzq" LastNumericValue="0" ModelType="UseCase" Prefix="UC" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="NUrhFG6GAqACcwzr" LastNumericValue="0" ModelType="Requirement" Prefix="REQ" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="NUrhFG6GAqACcwzs" LastNumericValue="0" ModelType="BusinessRule" Prefix="BR" Suffix=""/>
+					<POUserIDFormat Digits="-1" Guid="false" Id="NUrhFG6GAqACcwzt" LastNumericValue="0" ModelType="BusinessProcessDiagram" Prefix="" Suffix=""/>
+				</POUserIDFormats>
+			</PORepository>
+		</ProjectOptions>
+	</ProjectInfo>
+	<Models>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="nArhFG6GAqACcwlz" Name="boolean" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.241" PmLastModified="2020-12-03T12:15:35.995" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="XArhFG6GAqACcwl0" Name="byte" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.242" PmLastModified="2020-12-03T12:15:35.980" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="XArhFG6GAqACcwl1" Name="char" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.242" PmLastModified="2020-12-03T12:15:35.980" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="3ArhFG6GAqACcwl2" Name="double" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.243" PmLastModified="2020-12-03T12:15:35.957" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="3ArhFG6GAqACcwl3" Name="float" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.243" PmLastModified="2020-12-03T12:15:35.957" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="3ArhFG6GAqACcwl4" Name="int" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.243" PmLastModified="2020-12-03T12:15:35.957" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="3ArhFG6GAqACcwl5" Name="long" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.243" PmLastModified="2020-12-03T12:15:35.957" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="3ArhFG6GAqACcwl6" Name="short" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.243" PmLastModified="2020-12-03T12:15:35.957" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="PArhFG6GAqACcwl7" Name="void" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.244" PmLastModified="2020-12-03T12:15:35.970" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DataType BacklogActivityId="0" Documentation_plain="" Id="PArhFG6GAqACcwl8" Name="string" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:15:25.244" PmLastModified="2020-12-03T12:15:35.970" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<DBTable BacklogActivityId="0" ClassModel="NN6pFG6GAqACcw6o" DDLClauses_IsNull="true" DataModel="Physical" Documentation_plain="" Id="hIIRFG6GAqACcw0G" Name="Utilizador" OrmSyncState="Not Sync" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:16:26.913" PmLastModified="2020-12-03T12:31:05.351" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" PrimaryKeyConstraintName_IsNull="true" PrimaryKeyDDLClauses_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<DBColumn AttributeModel="NT6pFG6GAqACcw6t" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="74CRFG6GAqACcw0L" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:17:16.279" PmLastModified="2020-12-03T12:31:05.352" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="mz6pFG6GAqACcw6w" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="mayRFG6GAqACcw0O" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="primeiro_nome" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:17:29.497" PmLastModified="2020-12-03T12:31:05.352" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="2z6pFG6GAqACcw6y" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="RF2RFG6GAqACcw0e" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="ultimo_nome" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:18:03.426" PmLastModified="2020-12-03T12:31:05.352" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Oz6pFG6GAqACcw60" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="HduRFG6GAqACcw0j" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="email" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:18:12.024" PmLastModified="2020-12-03T12:31:05.352" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="uz6pFG6GAqACcw62" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="PzeRFG6GAqACcw0n" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="password" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:18:16.444" PmLastModified="2020-12-03T12:31:05.352" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+			</ModelChildren>
+			<FromSimpleRelationships>
+				<DBForeignKey Idref="p64xFG6GAqACcw2T" Name=""/>
+			</FromSimpleRelationships>
+			<ToSimpleRelationships>
+				<DBForeignKey Idref="3.PRFG6GAqACcw2D" Name=""/>
+			</ToSimpleRelationships>
+			<MasterView>
+				<DBTable Idref="uIIRFG6GAqACcw0F" Name="Utilizador"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" ClassModel="ez6pFG6GAqACcw64" DDLClauses_IsNull="true" DataModel="Physical" Documentation_plain="" Id="I5JRFG6GAqACcw1H" Name="Analise_SWOT" OrmSyncState="Not Sync" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:18:40.196" PmLastModified="2020-12-03T12:31:05.365" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" PrimaryKeyConstraintName_IsNull="true" PrimaryKeyDDLClauses_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<DBColumn AttributeModel=".z6pFG6GAqACcw66" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="Gv5RFG6GAqACcw1L" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:18:53.912" PmLastModified="2020-12-03T12:31:05.365" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Bz6pFG6GAqACcw68" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="nIlRFG6GAqACcw1O" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="utilizadorID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:18:58.489" PmLastModified="2020-12-03T12:31:05.365" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="hz6pFG6GAqACcw6." BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="USVRFG6GAqACcw1R" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="titulo" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:19:03.434" PmLastModified="2020-12-03T12:31:05.365" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="hz6pFG6GAqACcw7A" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="5k1RFG6GAqACcw1V" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="estado" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:19:06.984" PmLastModified="2020-12-03T12:31:05.365" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Rz6pFG6GAqACcw7C" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="_71RFG6GAqACcw1Y" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="0" Name="data_conclusao" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:19:09.951" PmLastModified="2020-12-03T12:31:05.365" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="date" TypeName_IsNull="true" Type_internalValue="17" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+			</ModelChildren>
+			<FromSimpleRelationships>
+				<DBForeignKey Idref="3.PRFG6GAqACcw2D" Name=""/>
+				<DBForeignKey Idref="H2pxFG6GAqACcw3S" Name=""/>
+				<DBForeignKey Idref="M6nxFG6GAqACcw4M" Name=""/>
+			</FromSimpleRelationships>
+			<ToSimpleRelationships>
+				<DBForeignKey Idref="p64xFG6GAqACcw2T" Name=""/>
+			</ToSimpleRelationships>
+			<MasterView>
+				<DBTable Idref="I5JRFG6GAqACcw1G" Name="Analise_SWOT"/>
+			</MasterView>
+		</DBTable>
+		<ModelRelationshipContainer BacklogActivityId="0" Documentation_plain="" Id="2eIxFG6GAqACcw2Q" Name="relationships" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:20:50.715" PmLastModified="2020-12-03T12:31:05.363" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<ModelRelationshipContainer BacklogActivityId="0" Documentation_plain="" Id="2eIxFG6GAqACcw2R" Name="DBForeignKey" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:20:50.715" PmLastModified="2020-12-03T12:26:36.356" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true">
+					<ModelChildren>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="I5JRFG6GAqACcw1H" FromMultiplicity="1" FromPhrase_IsNull="true" Id="3.PRFG6GAqACcw2D" Identifying="false" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:20:18.043" PmLastModified="2020-12-03T12:31:05.351" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="tL6pFG6GAqACcw72" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="hIIRFG6GAqACcw0G" ToMultiplicity="0..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="hIIRFG6GAqACcw0G" FromMultiplicity="1" FromPhrase_IsNull="true" Id="p64xFG6GAqACcw2T" Identifying="false" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:21:02.565" PmLastModified="2020-12-03T12:31:05.351" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="bL6pFG6GAqACcw8A" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="I5JRFG6GAqACcw1H" ToMultiplicity="0..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<MasterView>
+								<DBForeignKey Idref="F64xFG6GAqACcw2U" Name=""/>
+							</MasterView>
+						</DBForeignKey>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="I5JRFG6GAqACcw1H" FromMultiplicity="1" FromPhrase_IsNull="true" Id="H2pxFG6GAqACcw3S" Identifying="false" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:23:05.720" PmLastModified="2020-12-03T12:38:54.432" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="nL6pFG6GAqACcw8H" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="3YSxFG6GAqACcw2m" ToMultiplicity="1..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<MasterView>
+								<DBForeignKey Idref="32pxFG6GAqACcw3T" Name=""/>
+							</MasterView>
+						</DBForeignKey>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="I5JRFG6GAqACcw1H" FromMultiplicity="1" FromPhrase_IsNull="true" Id="M6nxFG6GAqACcw4M" Identifying="false" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:27.340" PmLastModified="2020-12-03T12:31:05.365" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="3L6pFG6GAqACcw8O" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="6YtxFG6GAqACcw3r" ToMultiplicity="1..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<MasterView>
+								<DBForeignKey Idref="86nxFG6GAqACcw4N" Name=""/>
+							</MasterView>
+						</DBForeignKey>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="3YSxFG6GAqACcw2m" FromMultiplicity="1" FromPhrase_IsNull="true" Id="qMsJFG6GAqACcw5B" Identifying="false" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:25:48.565" PmLastModified="2020-12-03T12:38:54.434" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="vL6pFG6GAqACcw8V" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="tAfxFG6GAqACcw4d" ToMultiplicity="1..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<MasterView>
+								<DBForeignKey Idref="6MsJFG6GAqACcw5C" Name=""/>
+							</MasterView>
+						</DBForeignKey>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="6YtxFG6GAqACcw3r" FromMultiplicity="1" FromPhrase_IsNull="true" Id="44KJFG6GAqACcw5X" Identifying="true" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:26:16.903" PmLastModified="2020-12-03T12:31:05.353" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="_L6pFG6GAqACcw8c" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="S4KJFG6GAqACcw5c" ToMultiplicity="0..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<MasterView>
+								<DBForeignKey Idref="k4KJFG6GAqACcw5Y" Name=""/>
+							</MasterView>
+						</DBForeignKey>
+						<DBForeignKey BacklogActivityId="0" DataModel="Physical" Documentation_plain="" ForeignKeyRelationshipPattern="{association_name}" From="tAfxFG6GAqACcw4d" FromMultiplicity="1" FromPhrase_IsNull="true" Id="h4KJFG6GAqACcw5f" Identifying="true" Name="" OnDelete="" OnUpdate="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:26:16.929" PmLastModified="2020-12-03T12:31:05.354" QualityReason_IsNull="true" QualityScore="-1" RelationshipEndModel="gr6pFG6GAqACcw8j" Subtype="false" SyncToAssociation="Yes" SyncType="Not Sync" To="S4KJFG6GAqACcw5c" ToMultiplicity="0..*" ToPhrase_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true">
+							<MasterView>
+								<DBForeignKey Idref="J4KJFG6GAqACcw5g" Name=""/>
+							</MasterView>
+						</DBForeignKey>
+					</ModelChildren>
+				</ModelRelationshipContainer>
+				<ModelRelationshipContainer BacklogActivityId="0" Documentation_plain="" Id="3hWpFG6GAqACcw94" Name="Association" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:31:05.339" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true">
+					<ModelChildren>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="ez6pFG6GAqACcw64" EndRelationshipToMetaModelElement="xz6pFG6GAqACcw7E" Id="nL6pFG6GAqACcw8G" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.265" PmLastModified="2020-12-03T12:38:54.431" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="3L6pFG6GAqACcw8M" Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="ez6pFG6GAqACcw64" Id="nL6pFG6GAqACcw8H" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="analise_SWOT" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.265" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="H2pxFG6GAqACcw3S" Id="XL6pFG6GAqACcw8L" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="nL6pFG6GAqACcw8I" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.265" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="xz6pFG6GAqACcw7E" Id="nL6pFG6GAqACcw8J" JavaCodeAttributeName="" Leaf="false" Multiplicity="1..*" Name="quadrante" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.265" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="nL6pFG6GAqACcw8K" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.265" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="pAGpFG6GAqACcw9d" Name=""/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="xz6pFG6GAqACcw7E" EndRelationshipToMetaModelElement="Dz6pFG6GAqACcw7e" Id="vL6pFG6GAqACcw8U" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.269" PmLastModified="2020-12-03T12:38:54.433" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="_L6pFG6GAqACcw8a" Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="xz6pFG6GAqACcw7E" Id="vL6pFG6GAqACcw8V" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="quadrante" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.269" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="qMsJFG6GAqACcw5B" Id="fL6pFG6GAqACcw8Z" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="vL6pFG6GAqACcw8W" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.269" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="Dz6pFG6GAqACcw7e" Id="vL6pFG6GAqACcw8X" JavaCodeAttributeName="" Leaf="false" Multiplicity="1..*" Name="fator" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.269" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="vL6pFG6GAqACcw8Y" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.269" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="n_6pFG6GAqACcw9P" Name=""/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="ez6pFG6GAqACcw64" EndRelationshipToMetaModelElement="NN6pFG6GAqACcw6o" Id="xL6pFG6GAqACcw70" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.243" PmLastModified="2020-12-03T12:32:04.503" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="bL6pFG6GAqACcw7." Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="ez6pFG6GAqACcw64" Id="tL6pFG6GAqACcw72" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="analise_SWOT" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.253" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="3.PRFG6GAqACcw2D" Id="zL6pFG6GAqACcw78" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="9L6pFG6GAqACcw74" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.255" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="NN6pFG6GAqACcw6o" Id="9L6pFG6GAqACcw75" JavaCodeAttributeName="" Leaf="false" Multiplicity="0..*" Name="utilizador" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.255" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="9L6pFG6GAqACcw76" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.255" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="cgGpFG6GAqACcw9r" Name=""/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="NN6pFG6GAqACcw6o" EndRelationshipToMetaModelElement="ez6pFG6GAqACcw64" Id="bL6pFG6GAqACcw7_" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.262" PmLastModified="2020-12-03T12:33:04.501" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="nL6pFG6GAqACcw8F" Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="NN6pFG6GAqACcw6o" Id="bL6pFG6GAqACcw8A" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="utilizador1" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.262" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="p64xFG6GAqACcw2T" Id="HL6pFG6GAqACcw8E" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="bL6pFG6GAqACcw8B" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.262" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="ez6pFG6GAqACcw64" Id="bL6pFG6GAqACcw8C" JavaCodeAttributeName="" Leaf="false" Multiplicity="0..*" Name="analise_SWOT1" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.262" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="bL6pFG6GAqACcw8D" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.262" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="ez6pFG6GAqACcw64" EndRelationshipToMetaModelElement="lz6pFG6GAqACcw7Q" Id="3L6pFG6GAqACcw8N" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.267" PmLastModified="2020-12-03T12:32:04.504" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="vL6pFG6GAqACcw8T" Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="ez6pFG6GAqACcw64" Id="3L6pFG6GAqACcw8O" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="analise_SWOT" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.267" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="M6nxFG6GAqACcw4M" Id="PL6pFG6GAqACcw8S" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="3L6pFG6GAqACcw8P" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.267" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="lz6pFG6GAqACcw7Q" Id="3L6pFG6GAqACcw8Q" JavaCodeAttributeName="" Leaf="false" Multiplicity="1..*" Name="cruzamento_Dados" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.267" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="3L6pFG6GAqACcw8R" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.267" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="MAGpFG6GAqACcw9W" Name=""/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="lz6pFG6GAqACcw7Q" EndRelationshipToMetaModelElement="bz6pFG6GAqACcw7s" Id="_L6pFG6GAqACcw8b" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.271" PmLastModified="2020-12-03T12:32:04.503" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="Ar6pFG6GAqACcw8h" Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="lz6pFG6GAqACcw7Q" Id="_L6pFG6GAqACcw8c" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="cruzamento_Dados" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.271" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="44KJFG6GAqACcw5X" Id="Ar6pFG6GAqACcw8g" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="_L6pFG6GAqACcw8d" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.271" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="bz6pFG6GAqACcw7s" Id="_L6pFG6GAqACcw8e" JavaCodeAttributeName="" Leaf="false" Multiplicity="0..*" Name="cruzamento_Dados_Fator" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.271" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="_L6pFG6GAqACcw8f" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.271" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="J_6pFG6GAqACcw9I" Name=""/>
+							</MasterView>
+						</Association>
+						<Association Abstract="false" BacklogActivityId="0" Derived="false" Direction="From To" Documentation_plain="" EndRelationshipFromMetaModelElement="Dz6pFG6GAqACcw7e" EndRelationshipToMetaModelElement="bz6pFG6GAqACcw7s" Id="gr6pFG6GAqACcw8i" Leaf="false" Name="" OrderingInProfile="-1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.273" PmLastModified="2020-12-03T12:32:04.504" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+							<OrmDetail>
+								<ORMAssociationDetail Cache="Disable" CollectionType="Unspecified" FromLazyInitializationOptions="Unspecified" Id="wr6pFG6GAqACcw8o" Name="" Persistable="Yes" ReadOnly="false" ToLazyInitializationOptions="Unspecified"/>
+							</OrmDetail>
+							<FromEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="Dz6pFG6GAqACcw7e" Id="gr6pFG6GAqACcw8j" JavaCodeAttributeName="" Leaf="false" Multiplicity="1" Name="fator" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.273" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<OrmDetail>
+										<ORMAssociationEndDetail BatchSize="0" Cascade_IsNull="true" ColumnName_IsNull="true" Fetch="Unspecified" ForeignKeyModel="h4KJFG6GAqACcw5f" Id="Qr6pFG6GAqACcw8n" Name=""/>
+									</OrmDetail>
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="gr6pFG6GAqACcw8k" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.273" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</FromEnd>
+							<ToEnd>
+								<AssociationEnd AggregationKind="None" BacklogActivityId="0" ConnectToCodeModel="1" DefaultValue_IsNull="true" Derived="false" DerivedUnion="false" Documentation_plain="" EndModelElement="bz6pFG6GAqACcw7s" Id="gr6pFG6GAqACcw8l" JavaCodeAttributeName="" Leaf="false" Multiplicity="0..*" Name="cruzamento_Dados_Fator" Navigable="Navigable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.273" PmLastModified_IsNull="true" ProvidePropertyGetterMethod="false" ProvidePropertySetterMethod="false" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Static="false" TypeModifier="" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="Unspecified">
+									<Qualifier>
+										<Qualifier BacklogActivityId="0" Documentation_plain="" Id="gr6pFG6GAqACcw8m" Name="" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.273" PmLastModified_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+									</Qualifier>
+								</AssociationEnd>
+							</ToEnd>
+							<MasterView>
+								<Association Idref="2f6pFG6GAqACcw9B" Name=""/>
+							</MasterView>
+						</Association>
+					</ModelChildren>
+				</ModelRelationshipContainer>
+			</ModelChildren>
+		</ModelRelationshipContainer>
+		<DBTable BacklogActivityId="0" ClassModel="xz6pFG6GAqACcw7E" DDLClauses_IsNull="true" DataModel="Physical" Documentation_plain="" Id="3YSxFG6GAqACcw2m" Name="Quadrante" OrmSyncState="Not Sync" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:21:46.555" PmLastModified="2020-12-03T12:38:54.434" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" PrimaryKeyConstraintName_IsNull="true" PrimaryKeyDDLClauses_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<DBColumn AttributeModel="pz6pFG6GAqACcw7G" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="_uqxFG6GAqACcw2q" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:22:00.319" PmLastModified="2020-12-03T12:38:54.434" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="pz6pFG6GAqACcw7I" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="yYaxFG6GAqACcw2t" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="analise_swotID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:22:02.899" PmLastModified="2020-12-03T12:38:54.434" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Zz6pFG6GAqACcw7K" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="T26xFG6GAqACcw2w" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="numero" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:22:08.370" PmLastModified="2020-12-03T12:38:54.434" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="5z6pFG6GAqACcw7M" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="xcGxFG6GAqACcw2z" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="titulo" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:22:11.619" PmLastModified="2020-12-03T12:38:54.434" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Fz6pFG6GAqACcw7O" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="CPOxFG6GAqACcw22" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="Column" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:22:30.928" PmLastModified="2020-12-03T12:38:54.434" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+			</ModelChildren>
+			<FromSimpleRelationships>
+				<DBForeignKey Idref="qMsJFG6GAqACcw5B" Name=""/>
+			</FromSimpleRelationships>
+			<ToSimpleRelationships>
+				<DBForeignKey Idref="H2pxFG6GAqACcw3S" Name=""/>
+			</ToSimpleRelationships>
+			<MasterView>
+				<DBTable Idref="3YSxFG6GAqACcw2l" Name="Quadrante"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" ClassModel="lz6pFG6GAqACcw7Q" DDLClauses_IsNull="true" DataModel="Physical" Documentation_plain="" Id="6YtxFG6GAqACcw3r" Name="Cruzamento_Dados" OrmSyncState="Not Sync" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:23:37.111" PmLastModified="2020-12-03T12:31:05.366" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" PrimaryKeyConstraintName_IsNull="true" PrimaryKeyDDLClauses_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<DBColumn AttributeModel="1z6pFG6GAqACcw7S" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="YmDxFG6GAqACcw3v" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:23:50.598" PmLastModified="2020-12-03T12:31:05.366" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Nz6pFG6GAqACcw7U" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="prjxFG6GAqACcw3y" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="fatorID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:23:56.517" PmLastModified="2020-12-03T12:31:05.366" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="tz6pFG6GAqACcw7W" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="wjTxFG6GAqACcw31" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="plano_de_acao" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:00.323" PmLastModified="2020-12-03T12:31:05.366" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="tz6pFG6GAqACcw7Y" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="wdLxFG6GAqACcw35" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="estado" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:08.323" PmLastModified="2020-12-03T12:31:05.366" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="dz6pFG6GAqACcw7a" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="9BrxFG6GAqACcw38" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="0" Name="data_conclusao" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:11.567" PmLastModified="2020-12-03T12:31:05.366" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="date" TypeName_IsNull="true" Type_internalValue="17" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="9z6pFG6GAqACcw7c" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="FBbxFG6GAqACcw4A" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="Column" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:15.656" PmLastModified="2020-12-03T12:31:05.366" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+			</ModelChildren>
+			<FromSimpleRelationships>
+				<DBForeignKey Idref="44KJFG6GAqACcw5X" Name=""/>
+			</FromSimpleRelationships>
+			<ToSimpleRelationships>
+				<DBForeignKey Idref="M6nxFG6GAqACcw4M" Name=""/>
+			</ToSimpleRelationships>
+			<MasterView>
+				<DBTable Idref="6YtxFG6GAqACcw3q" Name="Cruzamento_Dados"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" ClassModel="Dz6pFG6GAqACcw7e" DDLClauses_IsNull="true" DataModel="Physical" Documentation_plain="" Id="tAfxFG6GAqACcw4d" Name="Fator" OrmSyncState="Not Sync" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:46.381" PmLastModified="2020-12-03T12:31:05.360" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" PrimaryKeyConstraintName_IsNull="true" PrimaryKeyDDLClauses_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" SyncType="Not Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<DBColumn AttributeModel="jz6pFG6GAqACcw7g" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="E5AJFG6GAqACcw4h" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:24:57.032" PmLastModified="2020-12-03T12:31:05.360" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Tz6pFG6GAqACcw7i" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="dDgJFG6GAqACcw4k" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="quadranteID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:25:01.742" PmLastModified="2020-12-03T12:31:05.360" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Tz6pFG6GAqACcw7k" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="uMIJFG6GAqACcw4n" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="descricao" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:25:11.709" PmLastModified="2020-12-03T12:31:05.360" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" TypeName_IsNull="true" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="zz6pFG6GAqACcw7m" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="BGYJFG6GAqACcw4r" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="classificacao" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:25:20.672" PmLastModified="2020-12-03T12:31:05.360" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Lz6pFG6GAqACcw7o" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="8oEJFG6GAqACcw4u" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="importancia" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:25:27.631" PmLastModified="2020-12-03T12:31:05.360" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="rz6pFG6GAqACcw7q" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="R4kJFG6GAqACcw4x" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="Column" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:25:31.874" PmLastModified="2020-12-03T12:31:05.360" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+			</ModelChildren>
+			<FromSimpleRelationships>
+				<DBForeignKey Idref="h4KJFG6GAqACcw5f" Name=""/>
+			</FromSimpleRelationships>
+			<ToSimpleRelationships>
+				<DBForeignKey Idref="qMsJFG6GAqACcw5B" Name=""/>
+			</ToSimpleRelationships>
+			<MasterView>
+				<DBTable Idref="tAfxFG6GAqACcw4c" Name="Fator"/>
+			</MasterView>
+		</DBTable>
+		<DBTable BacklogActivityId="0" ClassModel="bz6pFG6GAqACcw7s" DDLClauses_IsNull="true" DataModel="Physical" Documentation_plain="" Id="S4KJFG6GAqACcw5c" Name="Cruzamento_Dados_Fator" OrmSyncState="Not Sync" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:26:16.914" PmLastModified="2020-12-03T12:31:05.356" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" PrimaryKeyConstraintName_IsNull="true" PrimaryKeyDDLClauses_IsNull="true" QualityReason_IsNull="true" QualityScore="-1" SyncType="Sync" Type="0" Unlogged="false" UserIDLastNumericValue="0" UserID_IsNull="true">
+			<ModelChildren>
+				<DBColumn AttributeModel="7z6pFG6GAqACcw7u" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="P81JFG6GAqACcw58" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:27:51.676" PmLastModified="2020-12-03T12:31:05.356" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="Hz6pFG6GAqACcw7w" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="mwtJFG6GAqACcw5_" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID_CruzamentoDados" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:27:59.065" PmLastModified="2020-12-03T12:31:05.356" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+				<DBColumn AttributeModel="nz6pFG6GAqACcw7y" BacklogActivityId="0" CheckConstraint_IsNull="true" Collation_IsNull="true" DDLClauses_IsNull="true" DbColumnName_IsNull="true" DefaultValue_IsNull="true" Documentation_plain="" ForeignKeyNamePattern_IsNull="true" Generated="Unspecified" Id="V2dJFG6GAqACcw6C" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="ID_Fator" Nullable="true" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:28:04.714" PmLastModified="2020-12-03T12:31:05.356" PrimaryKey="false" QualityReason_IsNull="true" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" TypeName_IsNull="true" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+			</ModelChildren>
+			<ToSimpleRelationships>
+				<DBForeignKey Idref="44KJFG6GAqACcw5X" Name=""/>
+				<DBForeignKey Idref="h4KJFG6GAqACcw5f" Name=""/>
+			</ToSimpleRelationships>
+			<MasterView>
+				<DBTable Idref="i4KJFG6GAqACcw5b" Name="Cruzamento_Dados_Fator"/>
+			</MasterView>
+		</DBTable>
+		<Class Abstract="false" Active="false" BacklogActivityId="0" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="NN6pFG6GAqACcw6o" Leaf="false" Name="Utilizador" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:53.740" PmLastModified="2020-12-03T12:40:31.417" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" DeleteSQL_IsNull="true" DiscriminatorValue_IsNull="true" HibBaseType_IsNull="true" Id="YT6pFG6GAqACcw6q" InheritanceStrategy="Table per class hierarchy" InsertSQL_IsNull="true" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="hIIRFG6GAqACcw0G" UpdateSQL_IsNull="true"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="ET6pFG6GAqACcw6r" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="NT6pFG6GAqACcw6t" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.124" PmLastModified="2020-12-03T12:31:05.363" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="74CRFG6GAqACcw0L" Formula_IsNull="true" GetterCode_IsNull="true" Id="DT6pFG6GAqACcw6v" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="mz6pFG6GAqACcw6w" IsID="false" Leaf="false" Multiplicity="0..1" Name="primeiro_nome" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.169" PmLastModified="2020-12-03T12:31:05.363" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="mayRFG6GAqACcw0O" Formula_IsNull="true" GetterCode_IsNull="true" Id="Wz6pFG6GAqACcw6x" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="2z6pFG6GAqACcw6y" IsID="false" Leaf="false" Multiplicity="0..1" Name="ultimo_nome" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.171" PmLastModified="2020-12-03T12:31:05.363" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="RF2RFG6GAqACcw0e" Formula_IsNull="true" GetterCode_IsNull="true" Id="Oz6pFG6GAqACcw6z" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Oz6pFG6GAqACcw60" IsID="false" Leaf="false" Multiplicity="0..1" Name="email" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.172" PmLastModified="2020-12-03T12:31:05.363" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="HduRFG6GAqACcw0j" Formula_IsNull="true" GetterCode_IsNull="true" Id="Oz6pFG6GAqACcw61" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="uz6pFG6GAqACcw62" IsID="false" Leaf="false" Multiplicity="0..1" Name="password" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.173" PmLastModified="2020-12-03T12:31:05.363" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="PzeRFG6GAqACcw0n" Formula_IsNull="true" GetterCode_IsNull="true" Id="uz6pFG6GAqACcw63" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="E5i5FG6GAqACcxAb" Leaf="false" Lower_IsNull="true" Name="criar" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:39:13.096" PmLastModified="2020-12-03T12:39:49.074" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="xWK5FG6GAqACcxAe" Leaf="false" Lower_IsNull="true" Name="login" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:39:24.579" PmLastModified="2020-12-03T12:40:31.418" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="L5a5FG6GAqACcxAh" Leaf="false" Lower_IsNull="true" Name="alterarPassword" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:39:33.620" PmLastModified="2020-12-03T12:40:01.772" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="xH6pFG6GAqACcw8v" Name="Utilizador"/>
+			</MasterView>
+		</Class>
+		<Stereotype Abstract="false" BacklogActivityId="0" BaseType="Class" Documentation_plain="" IconPath="" Id="ET6pFG6GAqACcw6r" Leaf="false" Name="ORM Persistable" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:05:47.083" PmLastModified="2020-12-03T12:31:05.365" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true"/>
+		<Class Abstract="false" Active="false" BacklogActivityId="0" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="ez6pFG6GAqACcw64" Leaf="false" Name="Analise_SWOT" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.174" PmLastModified="2020-12-03T12:46:55.820" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" DeleteSQL_IsNull="true" DiscriminatorValue_IsNull="true" HibBaseType_IsNull="true" Id="ez6pFG6GAqACcw65" InheritanceStrategy="Table per class hierarchy" InsertSQL_IsNull="true" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="I5JRFG6GAqACcw1H" UpdateSQL_IsNull="true"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="ET6pFG6GAqACcw6r" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id=".z6pFG6GAqACcw66" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.175" PmLastModified="2020-12-03T12:31:05.364" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="Gv5RFG6GAqACcw1L" Formula_IsNull="true" GetterCode_IsNull="true" Id="Bz6pFG6GAqACcw67" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Bz6pFG6GAqACcw68" IsID="false" Leaf="false" Multiplicity="0..1" Name="utilizadorID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.176" PmLastModified="2020-12-03T12:31:05.365" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="nIlRFG6GAqACcw1O" Formula_IsNull="true" GetterCode_IsNull="true" Id="Bz6pFG6GAqACcw69" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="hz6pFG6GAqACcw6." IsID="false" Leaf="false" Multiplicity="0..1" Name="titulo" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.177" PmLastModified="2020-12-03T12:31:05.365" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="USVRFG6GAqACcw1R" Formula_IsNull="true" GetterCode_IsNull="true" Id="hz6pFG6GAqACcw6_" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="hz6pFG6GAqACcw7A" IsID="false" Leaf="false" Multiplicity="0..1" Name="estado" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.177" PmLastModified="2020-12-03T12:31:05.365" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="5k1RFG6GAqACcw1V" Formula_IsNull="true" GetterCode_IsNull="true" Id="Rz6pFG6GAqACcw7B" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Rz6pFG6GAqACcw7C" IsID="false" Leaf="false" Multiplicity="0..1" Name="data_conclusao" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.178" PmLastModified="2020-12-03T12:31:05.365" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Date" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="_71RFG6GAqACcw1Y" Formula_IsNull="true" GetterCode_IsNull="true" Id="xz6pFG6GAqACcw7D" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="Rd15FG6GAqACcxA2" Leaf="false" Lower_IsNull="true" Name="criar" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:41:00.066" PmLastModified="2020-12-03T12:41:15.310" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="4WT5FG6GAqACcxBD" Leaf="false" Lower_IsNull="true" Name="arquivar" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:41:27.431" PmLastModified="2020-12-03T12:41:39.643" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="73T5FG6GAqACcxBG" Leaf="false" Lower_IsNull="true" Name="gerarGraficos" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:41:29.591" PmLastModified="2020-12-03T12:45:45.743" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="ff7FFG6GAqACcxCF" Leaf="false" Lower_IsNull="true" Name="exportarRelatorio" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:46:12.414" PmLastModified="2020-12-03T12:46:35.948" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="5i3FFG6GAqACcxCI" Leaf="false" Lower_IsNull="true" Name="consultarEstadoGeralEmpresa" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:46:25.895" PmLastModified="2020-12-03T12:46:55.821" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="rP6pFG6GAqACcw8y" Name="Analise_SWOT"/>
+			</MasterView>
+		</Class>
+		<Class Abstract="false" Active="false" BacklogActivityId="0" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="lz6pFG6GAqACcw7Q" Leaf="false" Name="Cruzamento_Dados" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.185" PmLastModified="2020-12-03T12:46:01.000" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" DeleteSQL_IsNull="true" DiscriminatorValue_IsNull="true" HibBaseType_IsNull="true" Id="Vz6pFG6GAqACcw7R" InheritanceStrategy="Table per class hierarchy" InsertSQL_IsNull="true" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="6YtxFG6GAqACcw3r" UpdateSQL_IsNull="true"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="ET6pFG6GAqACcw6r" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="1z6pFG6GAqACcw7S" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.187" PmLastModified="2020-12-03T12:31:05.355" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="YmDxFG6GAqACcw3v" Formula_IsNull="true" GetterCode_IsNull="true" Id="1z6pFG6GAqACcw7T" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Nz6pFG6GAqACcw7U" IsID="false" Leaf="false" Multiplicity="0..1" Name="fatorID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.188" PmLastModified="2020-12-03T12:31:05.355" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="prjxFG6GAqACcw3y" Formula_IsNull="true" GetterCode_IsNull="true" Id="Nz6pFG6GAqACcw7V" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="tz6pFG6GAqACcw7W" IsID="false" Leaf="false" Multiplicity="0..1" Name="plano_de_acao" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.189" PmLastModified="2020-12-03T12:31:05.355" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="wjTxFG6GAqACcw31" Formula_IsNull="true" GetterCode_IsNull="true" Id="tz6pFG6GAqACcw7X" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="tz6pFG6GAqACcw7Y" IsID="false" Leaf="false" Multiplicity="0..1" Name="estado" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.189" PmLastModified="2020-12-03T12:31:05.355" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="wdLxFG6GAqACcw35" Formula_IsNull="true" GetterCode_IsNull="true" Id="dz6pFG6GAqACcw7Z" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="dz6pFG6GAqACcw7a" IsID="false" Leaf="false" Multiplicity="0..1" Name="data_conclusao" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.190" PmLastModified="2020-12-03T12:31:05.355" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Date" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="9BrxFG6GAqACcw38" Formula_IsNull="true" GetterCode_IsNull="true" Id="9z6pFG6GAqACcw7b" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="9z6pFG6GAqACcw7c" IsID="false" Leaf="false" Multiplicity="0..1" Name="column" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.191" PmLastModified="2020-12-03T12:31:05.355" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="FBbxFG6GAqACcw4A" Formula_IsNull="true" GetterCode_IsNull="true" Id="9z6pFG6GAqACcw7d" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="NyuFFG6GAqACcxBX" Leaf="false" Lower_IsNull="true" Name="cruzarForcasOportunidades" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:44:23.148" PmLastModified="2020-12-03T12:44:51.567" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="WQBFFG6GAqACcxBa" Leaf="false" Lower_IsNull="true" Name="cruzarForcasAmeacas" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:44:34.330" PmLastModified="2020-12-03T12:44:51.567" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="FThFFG6GAqACcxBd" Leaf="false" Lower_IsNull="true" Name="cruzarFraquezasOportunidades" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:44:41.512" PmLastModified="2020-12-03T12:45:02.266" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="XmJFFG6GAqACcxBg" Leaf="false" Lower_IsNull="true" Name="cruzarFraquezasAmeacas" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:44:52.218" PmLastModified="2020-12-03T12:45:12.458" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="2v6pFG6GAqACcw84" Name="Cruzamento_Dados"/>
+			</MasterView>
+		</Class>
+		<Class Abstract="false" Active="false" BacklogActivityId="0" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="Dz6pFG6GAqACcw7e" Leaf="false" Name="Fator" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.192" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" DeleteSQL_IsNull="true" DiscriminatorValue_IsNull="true" HibBaseType_IsNull="true" Id="Dz6pFG6GAqACcw7f" InheritanceStrategy="Table per class hierarchy" InsertSQL_IsNull="true" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="tAfxFG6GAqACcw4d" UpdateSQL_IsNull="true"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="ET6pFG6GAqACcw6r" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="jz6pFG6GAqACcw7g" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.193" PmLastModified="2020-12-03T12:31:05.357" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="E5AJFG6GAqACcw4h" Formula_IsNull="true" GetterCode_IsNull="true" Id="jz6pFG6GAqACcw7h" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Tz6pFG6GAqACcw7i" IsID="false" Leaf="false" Multiplicity="0..1" Name="quadranteID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.194" PmLastModified="2020-12-03T12:31:05.357" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="dDgJFG6GAqACcw4k" Formula_IsNull="true" GetterCode_IsNull="true" Id="Tz6pFG6GAqACcw7j" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Tz6pFG6GAqACcw7k" IsID="false" Leaf="false" Multiplicity="0..1" Name="descricao" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.194" PmLastModified="2020-12-03T12:31:05.357" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="uMIJFG6GAqACcw4n" Formula_IsNull="true" GetterCode_IsNull="true" Id="zz6pFG6GAqACcw7l" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="zz6pFG6GAqACcw7m" IsID="false" Leaf="false" Multiplicity="0..1" Name="classificacao" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.195" PmLastModified="2020-12-03T12:31:05.357" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="BGYJFG6GAqACcw4r" Formula_IsNull="true" GetterCode_IsNull="true" Id="Lz6pFG6GAqACcw7n" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Lz6pFG6GAqACcw7o" IsID="false" Leaf="false" Multiplicity="0..1" Name="importancia" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.196" PmLastModified="2020-12-03T12:31:05.357" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="8oEJFG6GAqACcw4u" Formula_IsNull="true" GetterCode_IsNull="true" Id="rz6pFG6GAqACcw7p" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="rz6pFG6GAqACcw7q" IsID="false" Leaf="false" Multiplicity="0..1" Name="column" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.197" PmLastModified="2020-12-03T12:31:05.357" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="R4kJFG6GAqACcw4x" Formula_IsNull="true" GetterCode_IsNull="true" Id="rz6pFG6GAqACcw7r" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="bXTZFG6GAqACcw_g" Leaf="false" Lower_IsNull="true" Name="calcularPontuacao" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:37:07.382" PmLastModified="2020-12-03T12:37:31.362" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="Tv6pFG6GAqACcw87" Name="Fator"/>
+			</MasterView>
+		</Class>
+		<Class Abstract="false" Active="false" BacklogActivityId="0" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="bz6pFG6GAqACcw7s" Leaf="false" Name="Cruzamento_Dados_Fator" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.198" PmLastModified="2020-12-03T12:31:05.347" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" DeleteSQL_IsNull="true" DiscriminatorValue_IsNull="true" HibBaseType_IsNull="true" Id="7z6pFG6GAqACcw7t" InheritanceStrategy="Table per class hierarchy" InsertSQL_IsNull="true" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="S4KJFG6GAqACcw5c" UpdateSQL_IsNull="true"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="ET6pFG6GAqACcw6r" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="7z6pFG6GAqACcw7u" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.199" PmLastModified="2020-12-03T12:31:05.351" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="P81JFG6GAqACcw58" Formula_IsNull="true" GetterCode_IsNull="true" Id="Hz6pFG6GAqACcw7v" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Hz6pFG6GAqACcw7w" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID_CruzamentoDados" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.200" PmLastModified="2020-12-03T12:31:05.351" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="mwtJFG6GAqACcw5_" Formula_IsNull="true" GetterCode_IsNull="true" Id="Hz6pFG6GAqACcw7x" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="nz6pFG6GAqACcw7y" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID_Fator" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.201" PmLastModified="2020-12-03T12:31:05.351" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="V2dJFG6GAqACcw6C" Formula_IsNull="true" GetterCode_IsNull="true" Id="nz6pFG6GAqACcw7z" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="of6pFG6GAqACcw8." Name="Cruzamento_Dados_Fator"/>
+			</MasterView>
+		</Class>
+		<Class Abstract="false" Active="false" BacklogActivityId="0" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="xz6pFG6GAqACcw7E" Leaf="false" Name="Quadrante" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.179" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" Root="false" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" DeleteSQL_IsNull="true" DiscriminatorValue_IsNull="true" HibBaseType_IsNull="true" Id="Jz6pFG6GAqACcw7F" InheritanceStrategy="Table per class hierarchy" InsertSQL_IsNull="true" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="3YSxFG6GAqACcw2m" UpdateSQL_IsNull="true"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="ET6pFG6GAqACcw6r" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="pz6pFG6GAqACcw7G" IsID="false" Leaf="false" Multiplicity="0..1" Name="ID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.181" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="_uqxFG6GAqACcw2q" Formula_IsNull="true" GetterCode_IsNull="true" Id="pz6pFG6GAqACcw7H" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="pz6pFG6GAqACcw7I" IsID="false" Leaf="false" Multiplicity="0..1" Name="analise_swotID" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.181" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="yYaxFG6GAqACcw2t" Formula_IsNull="true" GetterCode_IsNull="true" Id="Zz6pFG6GAqACcw7J" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Zz6pFG6GAqACcw7K" IsID="false" Leaf="false" Multiplicity="0..1" Name="numero" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.182" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="T26xFG6GAqACcw2w" Formula_IsNull="true" GetterCode_IsNull="true" Id="5z6pFG6GAqACcw7L" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="5z6pFG6GAqACcw7M" IsID="false" Leaf="false" Multiplicity="0..1" Name="titulo" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.183" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="String" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="xcGxFG6GAqACcw2z" Formula_IsNull="true" GetterCode_IsNull="true" Id="5z6pFG6GAqACcw7N" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" BacklogActivityId="0" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="Fz6pFG6GAqACcw7O" IsID="false" Leaf="false" Multiplicity="0..1" Name="column" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:54.184" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" TypeModifier_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail ColumnModel="CPOxFG6GAqACcw22" Formula_IsNull="true" GetterCode_IsNull="true" Id="Fz6pFG6GAqACcw7P" Lazy="false" Name="" Persistable="Yes" SetterCode_IsNull="true"/>
+					</OrmDetail>
+				</Attribute>
+				<Operation Abstract="false" BacklogActivityId="0" BodyCondition_IsNull="true" ConnectToCodeModel="1" Documentation_plain="" Id="FpvZFG6GAqACcw_3" Leaf="false" Lower_IsNull="true" Name="calcularPontuacaoGeral" Ordered="false" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:37:51.080" PmLastModified="2020-12-03T12:38:54.435" QualityReason_IsNull="true" QualityScore="-1" Query="false" ReturnTypeDocumentation_plain="" Scope="instance" Static="false" TypeModifier="" Unique="true" Upper_IsNull="true" UserIDLastNumericValue="0" UserID_IsNull="true" Visibility="public" Visible="true"/>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="kv6pFG6GAqACcw81" Name="Quadrante"/>
+			</MasterView>
+		</Class>
+	</Models>
+	<Diagrams>
+		<ClassDiagram AlignToGrid="false" AutoFitShapesSize="false" ClassFitSizeWhenShowHideMember="true" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorModelElementNameAlignment="4" ConnectorStyle="1" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" GeneralizationSetNotation="2" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="885" HideConnectorIfFromToIsHidden="0" HideEmptyTaggedValues="false" Id="3UipFG6GAqACcw6k" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" Maximized="true" ModelElementNameAlignment="4" Name="Class Diagram" PaintConnectorThroughLabel="1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:30:27.003" PmLastModified="2020-12-03T12:47:10.134" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestFitSizeWithPromptUser="false" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActivityStateNodeCaption="524287" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowAssociationNavigationArrows="3" ShowAttributeGetterSetter="false" ShowAttributesCodeDetails="2" ShowAttributesPropertyModifiers="2" ShowAttributesType="1" ShowClassEmptyCompartments="2" ShowClassOwner="2" ShowClassReferencedAttributes="true" ShowColorLegend="false" ShowConnectorLegend="false" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="true" ShowEllipsisForUnshownClassMembers="2" ShowInformationItemOption="2" ShowOperationsCodeDetails="2" ShowOperationsParameters="1" ShowOperationsReturnType="1" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowPackageOwner="2" ShowParametersCodeDetails="2" ShowShapeLegend="false" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" ShowTemplateInfoOfGeneralizationAndRealization="false" SuppressImplied1MultiplicityForAttributeAndAssociationEnd="false" TeamworkCreateDateTime="0" TransitFrom="qGfhFG6GAqACcwzv" TrimmedHeight="0" TrimmedWidth="0" Width="1894" X="0" Y="0" ZoomRatio="1.0" _globalPaletteOption="true">
+			<Shapes>
+				<Class AttributeSortType="0" Background="rgb(122, 207, 245)" ConnectToPoint="false" ConnectionPointType="2" CoverConnector="false" DisplayAsRobustnessAnalysisIcon="true" EnumerationLiteralSortType="0" Foreground="rgb(0, 0, 0)" Height="162" Id="xH6pFG6GAqACcw8v" InterfaceBall="false" KShDrOp="false" KSwCsMbSt="true" LShCmMl="false" LshRfAts="0" MShDrAt="false" MSwTpPts="true" MetaModelElement="NN6pFG6GAqACcw6o" Model="NN6pFG6GAqACcw6o" ModelElementNameAlignment="9" Name="Utilizador" OperationSortType="0" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" ReceptionSortType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowAttributeType="1" ShowAttributesCodeDetails="0" ShowAttributesPropertyModifiers="0" ShowAttributesType="0" ShowClassMemberConstraints="true" ShowEllipsisForUnshownMembers="0" ShowEmptyCompartments="0" ShowEnumerationLiteralType="1" ShowInitialAttributeValue="true" ShowOperationParameterDirection="false" ShowOperationProperties="false" ShowOperationRaisedExceptions="false" ShowOperationSignature="true" ShowOperationTemplateParameters="false" ShowOperationType="1" ShowOperationsCodeDetails="0" ShowOperationsParameters="0" ShowOperationsReturnType="0" ShowOwnerOption="3" ShowParameterNameInOperationSignature="true" ShowParametersCodeDetails="0" ShowReceptionType="1" ShowStereotypeIconName="0" ShowTypeOption="0" SuppressImplied1MultiplicityForAttribute="0" VisibilityStyle="1" Width="122" WpMbs="false" X="135" Y="158" ZOrder="12">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="122" X="0" Y="0"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</Class>
+				<Class AttributeSortType="0" Background="rgb(122, 207, 245)" ConnectToPoint="false" ConnectionPointType="2" CoverConnector="false" DisplayAsRobustnessAnalysisIcon="true" EnumerationLiteralSortType="0" Foreground="rgb(0, 0, 0)" Height="197" Id="rP6pFG6GAqACcw8y" InterfaceBall="false" KShDrOp="false" KSwCsMbSt="true" LShCmMl="false" LshRfAts="0" MShDrAt="false" MSwTpPts="true" MetaModelElement="ez6pFG6GAqACcw64" Model="ez6pFG6GAqACcw64" ModelElementNameAlignment="9" Name="Analise_SWOT" OperationSortType="0" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" ReceptionSortType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowAttributeType="1" ShowAttributesCodeDetails="0" ShowAttributesPropertyModifiers="0" ShowAttributesType="0" ShowClassMemberConstraints="true" ShowEllipsisForUnshownMembers="0" ShowEmptyCompartments="0" ShowEnumerationLiteralType="1" ShowInitialAttributeValue="true" ShowOperationParameterDirection="false" ShowOperationProperties="false" ShowOperationRaisedExceptions="false" ShowOperationSignature="true" ShowOperationTemplateParameters="false" ShowOperationType="1" ShowOperationsCodeDetails="0" ShowOperationsParameters="0" ShowOperationsReturnType="0" ShowOwnerOption="3" ShowParameterNameInOperationSignature="true" ShowParametersCodeDetails="0" ShowReceptionType="1" ShowStereotypeIconName="0" ShowTypeOption="0" SuppressImplied1MultiplicityForAttribute="0" VisibilityStyle="1" Width="171" WpMbs="false" X="104" Y="421" ZOrder="10">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="171" X="0" Y="0"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</Class>
+				<Class AttributeSortType="0" Background="rgb(122, 207, 245)" ConnectToPoint="false" ConnectionPointType="2" CoverConnector="false" DisplayAsRobustnessAnalysisIcon="true" EnumerationLiteralSortType="0" Foreground="rgb(0, 0, 0)" Height="194" Id="2v6pFG6GAqACcw84" InterfaceBall="false" KShDrOp="false" KSwCsMbSt="true" LShCmMl="false" LshRfAts="0" MShDrAt="false" MSwTpPts="true" MetaModelElement="lz6pFG6GAqACcw7Q" Model="lz6pFG6GAqACcw7Q" ModelElementNameAlignment="9" Name="Cruzamento_Dados" OperationSortType="0" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" ReceptionSortType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowAttributeType="1" ShowAttributesCodeDetails="0" ShowAttributesPropertyModifiers="0" ShowAttributesType="0" ShowClassMemberConstraints="true" ShowEllipsisForUnshownMembers="0" ShowEmptyCompartments="0" ShowEnumerationLiteralType="1" ShowInitialAttributeValue="true" ShowOperationParameterDirection="false" ShowOperationProperties="false" ShowOperationRaisedExceptions="false" ShowOperationSignature="true" ShowOperationTemplateParameters="false" ShowOperationType="1" ShowOperationsCodeDetails="0" ShowOperationsParameters="0" ShowOperationsReturnType="0" ShowOwnerOption="3" ShowParameterNameInOperationSignature="true" ShowParametersCodeDetails="0" ShowReceptionType="1" ShowStereotypeIconName="0" ShowTypeOption="0" SuppressImplied1MultiplicityForAttribute="0" VisibilityStyle="1" Width="175" WpMbs="false" X="479" Y="728" ZOrder="6">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="175" X="0" Y="0"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</Class>
+				<Class AttributeSortType="0" Background="rgb(122, 207, 245)" ConnectToPoint="false" ConnectionPointType="2" CoverConnector="false" DisplayAsRobustnessAnalysisIcon="true" EnumerationLiteralSortType="0" Foreground="rgb(0, 0, 0)" Height="147" Id="Tv6pFG6GAqACcw87" InterfaceBall="false" KShDrOp="false" KSwCsMbSt="true" LShCmMl="false" LshRfAts="0" MShDrAt="false" MSwTpPts="true" MetaModelElement="Dz6pFG6GAqACcw7e" Model="Dz6pFG6GAqACcw7e" ModelElementNameAlignment="9" Name="Fator" OperationSortType="0" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" ReceptionSortType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowAttributeType="1" ShowAttributesCodeDetails="0" ShowAttributesPropertyModifiers="0" ShowAttributesType="0" ShowClassMemberConstraints="true" ShowEllipsisForUnshownMembers="0" ShowEmptyCompartments="0" ShowEnumerationLiteralType="1" ShowInitialAttributeValue="true" ShowOperationParameterDirection="false" ShowOperationProperties="false" ShowOperationRaisedExceptions="false" ShowOperationSignature="true" ShowOperationTemplateParameters="false" ShowOperationType="1" ShowOperationsCodeDetails="0" ShowOperationsParameters="0" ShowOperationsReturnType="0" ShowOwnerOption="3" ShowParameterNameInOperationSignature="true" ShowParametersCodeDetails="0" ShowReceptionType="1" ShowStereotypeIconName="0" ShowTypeOption="0" SuppressImplied1MultiplicityForAttribute="0" VisibilityStyle="1" Width="119" WpMbs="false" X="922" Y="413" ZOrder="4">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="119" X="0" Y="0"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</Class>
+				<Class AttributeSortType="0" Background="rgb(122, 207, 245)" ConnectToPoint="false" ConnectionPointType="2" CoverConnector="false" DisplayAsRobustnessAnalysisIcon="true" EnumerationLiteralSortType="0" Foreground="rgb(0, 0, 0)" Height="83" Id="of6pFG6GAqACcw8." InterfaceBall="false" KShDrOp="false" KSwCsMbSt="true" LShCmMl="false" LshRfAts="0" MShDrAt="false" MSwTpPts="true" MetaModelElement="bz6pFG6GAqACcw7s" Model="bz6pFG6GAqACcw7s" ModelElementNameAlignment="9" Name="Cruzamento_Dados_Fator" OperationSortType="0" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" ReceptionSortType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowAttributeType="1" ShowAttributesCodeDetails="0" ShowAttributesPropertyModifiers="0" ShowAttributesType="0" ShowClassMemberConstraints="true" ShowEllipsisForUnshownMembers="0" ShowEmptyCompartments="0" ShowEnumerationLiteralType="1" ShowInitialAttributeValue="true" ShowOperationParameterDirection="false" ShowOperationProperties="false" ShowOperationRaisedExceptions="false" ShowOperationSignature="true" ShowOperationTemplateParameters="false" ShowOperationType="1" ShowOperationsCodeDetails="0" ShowOperationsParameters="0" ShowOperationsReturnType="0" ShowOwnerOption="3" ShowParameterNameInOperationSignature="true" ShowParametersCodeDetails="0" ShowReceptionType="1" ShowStereotypeIconName="0" ShowTypeOption="0" SuppressImplied1MultiplicityForAttribute="0" VisibilityStyle="1" Width="163" WpMbs="false" X="909" Y="782" ZOrder="2">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="163" X="0" Y="0"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</Class>
+				<Class AttributeSortType="0" Background="rgb(122, 207, 245)" ConnectToPoint="false" ConnectionPointType="2" CoverConnector="false" DisplayAsRobustnessAnalysisIcon="true" EnumerationLiteralSortType="0" Foreground="rgb(0, 0, 0)" Height="130" Id="kv6pFG6GAqACcw81" InterfaceBall="false" KShDrOp="false" KSwCsMbSt="true" LShCmMl="false" LshRfAts="0" MShDrAt="false" MSwTpPts="true" MetaModelElement="xz6pFG6GAqACcw7E" Model="xz6pFG6GAqACcw7E" ModelElementNameAlignment="9" Name="Quadrante" OperationSortType="0" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" ReceptionSortType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowAttributeType="1" ShowAttributesCodeDetails="0" ShowAttributesPropertyModifiers="0" ShowAttributesType="0" ShowClassMemberConstraints="true" ShowEllipsisForUnshownMembers="0" ShowEmptyCompartments="0" ShowEnumerationLiteralType="1" ShowInitialAttributeValue="true" ShowOperationParameterDirection="false" ShowOperationProperties="false" ShowOperationRaisedExceptions="false" ShowOperationSignature="true" ShowOperationTemplateParameters="false" ShowOperationType="1" ShowOperationsCodeDetails="0" ShowOperationsParameters="0" ShowOperationsReturnType="0" ShowOwnerOption="3" ShowParameterNameInOperationSignature="true" ShowParametersCodeDetails="0" ShowReceptionType="1" ShowStereotypeIconName="0" ShowTypeOption="0" SuppressImplied1MultiplicityForAttribute="0" VisibilityStyle="1" Width="138" WpMbs="false" X="516" Y="413" ZOrder="8">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="30" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="138" X="0" Y="0"/>
+					<FillColor Color="rgb(122, 207, 245)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</Class>
+			</Shapes>
+			<Connectors>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" Foreground="rgb(0, 0, 0)" From="Tv6pFG6GAqACcw87" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="true" HasMultiplicityBShape="true" HasRoleAShape="true" HasRoleBShape="true" Height="320" Id="2f6pFG6GAqACcw9B" MetaModelElement="gr6pFG6GAqACcw8i" Model="gr6pFG6GAqACcw8i" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="of6pFG6GAqACcw8." ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="false" UseToShapeCenter="false" Width="100" X="932" Y="511" ZOrder="14">
+					<MultiplicityBRectangle Height="40" Width="40" X="943" Y="750"/>
+					<MultiplicityARectangle Height="40" Width="40" X="974" Y="553"/>
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="972" Y="671"/>
+					<RoleA>
+						<NameCaption Height="44" Width="44" X="933" Y="550"/>
+						<MultiplicityCaption Height="40" Width="40" X="974" Y="553"/>
+					</RoleA>
+					<RoleB>
+						<NameCaption Height="148" Width="148" X="983" Y="696"/>
+						<MultiplicityCaption Height="40" Width="40" X="943" Y="750"/>
+					</RoleB>
+					<Points>
+						<Point X="982.0" Y="561.0"/>
+						<Point X="982.0" Y="781.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" Foreground="rgb(0, 0, 0)" From="2v6pFG6GAqACcw84" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="true" HasMultiplicityBShape="true" HasRoleAShape="true" HasRoleBShape="true" Height="100" Id="J_6pFG6GAqACcw9I" MetaModelElement="_L6pFG6GAqACcw8b" Model="_L6pFG6GAqACcw8b" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="of6pFG6GAqACcw8." ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="false" UseToShapeCenter="false" Width="353" X="605" Y="777" ZOrder="16">
+					<MultiplicityBRectangle Height="40" Width="40" X="870" Y="815"/>
+					<MultiplicityARectangle Height="40" Width="40" X="649" Y="799"/>
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="772" Y="827"/>
+					<RoleA>
+						<NameCaption Height="116" Width="116" X="655" Y="777"/>
+						<MultiplicityCaption Height="40" Width="40" X="649" Y="799"/>
+					</RoleA>
+					<RoleB>
+						<NameCaption Height="148" Width="148" X="760" Y="745"/>
+						<MultiplicityCaption Height="40" Width="40" X="870" Y="815"/>
+					</RoleB>
+					<Points>
+						<Point X="655.0" Y="827.0"/>
+						<Point X="908.0" Y="827.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" Foreground="rgb(0, 0, 0)" From="rP6pFG6GAqACcw8y" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="true" HasMultiplicityBShape="true" HasRoleAShape="true" HasRoleBShape="true" Height="281" Id="MAGpFG6GAqACcw9W" MetaModelElement="3L6pFG6GAqACcw8N" Model="3L6pFG6GAqACcw8N" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="2v6pFG6GAqACcw84" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="false" UseToShapeCenter="false" Width="367" X="161" Y="569" ZOrder="18">
+					<MultiplicityBRectangle Height="40" Width="40" X="436" Y="788"/>
+					<MultiplicityARectangle Height="40" Width="40" X="203" Y="611"/>
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="264" Y="820"/>
+					<RoleA>
+						<NameCaption Height="94" Width="94" X="115" Y="583"/>
+						<MultiplicityCaption Height="40" Width="40" X="203" Y="611"/>
+					</RoleA>
+					<RoleB>
+						<NameCaption Height="116" Width="116" X="358" Y="734"/>
+						<MultiplicityCaption Height="40" Width="40" X="436" Y="788"/>
+					</RoleB>
+					<Points>
+						<Point X="211.0" Y="619.0"/>
+						<Point X="211.0" Y="800.0"/>
+						<Point X="478.0" Y="800.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" Foreground="rgb(0, 0, 0)" From="rP6pFG6GAqACcw8y" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="true" HasMultiplicityBShape="true" HasRoleAShape="true" HasRoleBShape="true" Height="199" Id="cgGpFG6GAqACcw9r" MetaModelElement="xL6pFG6GAqACcw70" Model="xL6pFG6GAqACcw70" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="xH6pFG6GAqACcw8v" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="100" X="137" Y="271" ZOrder="20">
+					<MultiplicityBRectangle Height="40" Width="40" X="186" Y="313"/>
+					<MultiplicityARectangle Height="40" Width="40" X="153" Y="389"/>
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="177" Y="372"/>
+					<RoleA>
+						<NameCaption Height="94" Width="94" X="188" Y="362"/>
+						<MultiplicityCaption Height="40" Width="40" X="153" Y="389"/>
+					</RoleA>
+					<RoleB>
+						<NameCaption Height="66" Width="66" X="119" Y="300"/>
+						<MultiplicityCaption Height="40" Width="40" X="186" Y="313"/>
+					</RoleB>
+					<Points>
+						<Point X="187.0" Y="420.0"/>
+						<Point X="187.0" Y="321.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" Foreground="rgb(0, 0, 0)" From="kv6pFG6GAqACcw81" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="true" HasMultiplicityBShape="true" HasRoleAShape="true" HasRoleBShape="true" Height="100" Id="n_6pFG6GAqACcw9P" MetaModelElement="vL6pFG6GAqACcw8U" Model="vL6pFG6GAqACcw8U" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="Tv6pFG6GAqACcw87" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="false" UseToShapeCenter="false" Width="366" X="605" Y="427" ZOrder="22">
+					<MultiplicityBRectangle Height="40" Width="40" X="883" Y="465"/>
+					<MultiplicityARectangle Height="40" Width="40" X="649" Y="449"/>
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="773" Y="477"/>
+					<RoleA>
+						<NameCaption Height="70" Width="70" X="655" Y="450"/>
+						<MultiplicityCaption Height="40" Width="40" X="649" Y="449"/>
+					</RoleA>
+					<RoleB>
+						<NameCaption Height="44" Width="44" X="878" Y="447"/>
+						<MultiplicityCaption Height="40" Width="40" X="883" Y="465"/>
+					</RoleB>
+					<Points>
+						<Point X="655.0" Y="477.0"/>
+						<Point X="921.0" Y="477.0"/>
+					</Points>
+				</Association>
+				<Association AssociationEndPropertyStringsAInternalHeight="-2147483648" AssociationEndPropertyStringsAInternalWidth="-2147483648" AssociationEndPropertyStringsBInternalHeight="-2147483648" AssociationEndPropertyStringsBInternalWidth="-2147483648" Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" Foreground="rgb(0, 0, 0)" From="rP6pFG6GAqACcw8y" FromConnectType="0" FromMultiplicityInternalHeight="-2147483648" FromMultiplicityInternalWidth="-2147483648" FromPinType="1" FromRoleInternalHeight="-2147483648" FromRoleInternalWidth="-2147483648" FromShapeXDiff="0" FromShapeYDiff="0" HasAssociationEndPropertyStringsAShape="false" HasAssociationEndPropertyStringsBShape="false" HasMultiplicityAShape="true" HasMultiplicityBShape="true" HasRoleAShape="true" HasRoleBShape="true" Height="100" Id="pAGpFG6GAqACcw9d" MetaModelElement="nL6pFG6GAqACcw8G" Model="nL6pFG6GAqACcw8G" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" Selectable="true" ShowAssociationEndPropertyStrings="false" ShowConnectorName="2" ShowDirection="false" ShowFromMultiplicity="true" ShowFromRoleName="true" ShowFromRoleVisibility="true" ShowMultiplicityConstraints="false" ShowNavigationArrows="0" ShowOrderedMultiplicityConstraint="true" ShowStereotypes="true" ShowToMultiplicity="true" ShowToRoleName="true" ShowToRoleVisibility="true" ShowUniqueMultiplicityConstraint="true" SuppressImplied1MultiplicityForAssociationEnd="0" To="kv6pFG6GAqACcw81" ToConnectType="0" ToMultiplicityInternalHeight="-2147483648" ToMultiplicityInternalWidth="-2147483648" ToPinType="1" ToRoleInternalHeight="-2147483648" ToRoleInternalWidth="-2147483648" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="false" UseToShapeCenter="false" Width="339" X="226" Y="422" ZOrder="24">
+					<MultiplicityBRectangle Height="40" Width="40" X="473" Y="460"/>
+					<MultiplicityARectangle Height="40" Width="40" X="274" Y="444"/>
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="360" Y="472"/>
+					<RoleA>
+						<NameCaption Height="94" Width="94" X="280" Y="432"/>
+						<MultiplicityCaption Height="40" Width="40" X="274" Y="444"/>
+					</RoleA>
+					<RoleB>
+						<NameCaption Height="70" Width="70" X="441" Y="429"/>
+						<MultiplicityCaption Height="40" Width="40" X="473" Y="460"/>
+					</RoleB>
+					<Points>
+						<Point X="276.0" Y="472.0"/>
+						<Point X="515.0" Y="472.0"/>
+					</Points>
+				</Association>
+			</Connectors>
+		</ClassDiagram>
+		<ERDiagram AlignToGrid="false" AutoFitShapesSize="false" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorModelElementNameAlignment="4" ConnectorStyle="1" DataModel="2" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" ForeignKeyArrowHeadSize="3" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="885" HideConnectorIfFromToIsHidden="0" HideEmptyTaggedValues="false" Id="qGfhFG6GAqACcwzv" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" LogicalPhysicalColumnNameAbbreviationSetAddress="" LogicalPhysicalEntityNameAbbreviationSetAddress="" LogicalPhysicalSchemaNameAbbreviationSetAddress="" Maximized="false" ModelElementNameAlignment="4" Name="Entity Relationship Diagram1" PaintConnectorThroughLabel="1" PmAuthor="diogo" PmCreateDateTime="2020-12-03T12:16:03.605" PmLastModified="2020-12-03T12:28:39.331" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestFitSizeWithPromptUser="false" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActivityStateNodeCaption="524287" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowColorLegend="false" ShowConnectorLegend="false" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="false" ShowInformationItemOption="2" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowSchemaName="true" ShowShapeLegend="false" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" TeamworkCreateDateTime="0" TransitTo="3UipFG6GAqACcw6k" TrimmedHeight="0" TrimmedWidth="0" Width="1894" X="0" Y="0" ZoomRatio="1.0" _alignColumnProperties="true" _columnConstraintsDisplayOption="2" _globalPaletteOption="true" _pointForeignKeyEndToColumn="false" _showColumnDefaultValue="false" _showColumnStereotypes="true" _showColumnTypes="true" _showColumnUserType="false" _showDBTableColumnsMode="1" _showDBViewColumnsMode="1" _showExtraColumnProperties="true" _showProcedureStereotypes="true" _showStoredProcedureResultSetColumns="true" _showStoredProcedures="true" _showTriggerStereotypes="true" _showTriggers="true" documentation="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 12px }&#10;      --&gt;&#10;    &lt;/style&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;p&gt;&#13;&#10;      &#13;&#10;    &lt;/p&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;">
+			<Shapes>
+				<DBTable Background="rgb(245, 182, 122)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="111" Id="uIIRFG6GAqACcw0F" MetaModelElement="hIIRFG6GAqACcw0G" Model="hIIRFG6GAqACcw0G" ModelElementNameAlignment="9" Name="Utilizador" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="203" X="112" Y="160" ZOrder="12">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="203" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(245, 182, 122)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="131" Id="I5JRFG6GAqACcw1G" MetaModelElement="I5JRFG6GAqACcw1H" Model="I5JRFG6GAqACcw1H" ModelElementNameAlignment="9" Name="Analise_SWOT" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="207" X="108" Y="395" ZOrder="10">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="207" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(245, 182, 122)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="108" Id="3YSxFG6GAqACcw2l" MetaModelElement="3YSxFG6GAqACcw2m" Model="3YSxFG6GAqACcw2m" ModelElementNameAlignment="9" Name="Quadrante" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="205" X="516" Y="413" ZOrder="8">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="205" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(245, 182, 122)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="131" Id="6YtxFG6GAqACcw3q" MetaModelElement="6YtxFG6GAqACcw3r" Model="6YtxFG6GAqACcw3r" ModelElementNameAlignment="9" Name="Cruzamento_Dados" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="207" X="479" Y="728" ZOrder="6">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="207" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(245, 182, 122)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="131" Id="tAfxFG6GAqACcw4c" MetaModelElement="tAfxFG6GAqACcw4d" Model="tAfxFG6GAqACcw4d" ModelElementNameAlignment="9" Name="Fator" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="205" X="922" Y="413" ZOrder="4">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="205" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(245, 182, 122)" ColSortType="0" ConnectToPoint="true" ConnectionPointType="2" CoverConnector="false" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" Height="77" Id="i4KJFG6GAqACcw5b" MetaModelElement="S4KJFG6GAqACcw5c" Model="S4KJFG6GAqACcw5c" ModelElementNameAlignment="9" Name="Cruzamento_Dados_Fator" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="40" ParentConnectorLineLength="10" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="230" X="909" Y="782" ZOrder="2">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="15" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="230" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+			</Shapes>
+			<Connectors>
+				<DBForeignKey Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" From="uIIRFG6GAqACcw0F" FromConnectType="0" FromPinType="1" FromShapeXDiff="0" FromShapeYDiff="0" HasFromLabel="false" HasToLabel="false" Height="223" Id="F64xFG6GAqACcw2U" MetaModelElement="p64xFG6GAqACcw2T" Model="p64xFG6GAqACcw2T" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestResetLabels="false" Selectable="true" ShowConnectorName="2" To="I5JRFG6GAqACcw1G" ToConnectType="0" ToPinType="1" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="100" X="158" Y="221" ZOrder="14">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="209" Y="332"/>
+					<Points>
+						<Point X="208.0" Y="271.0"/>
+						<Point X="208.0" Y="394.0"/>
+					</Points>
+				</DBForeignKey>
+				<DBForeignKey Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" From="I5JRFG6GAqACcw1G" FromConnectType="0" FromPinType="1" FromShapeXDiff="0" FromShapeYDiff="0" HasFromLabel="false" HasToLabel="false" Height="100" Id="32pxFG6GAqACcw3T" MetaModelElement="H2pxFG6GAqACcw3S" Model="H2pxFG6GAqACcw3S" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestResetLabels="false" Selectable="true" ShowConnectorName="2" To="3YSxFG6GAqACcw2l" ToConnectType="0" ToPinType="1" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="300" X="265" Y="422" ZOrder="16">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="405" Y="471"/>
+					<Points>
+						<Point X="315.0" Y="472.0"/>
+						<Point X="515.0" Y="472.0"/>
+					</Points>
+				</DBForeignKey>
+				<DBForeignKey Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" From="I5JRFG6GAqACcw1G" FromConnectType="0" FromPinType="1" FromShapeXDiff="0" FromShapeYDiff="0" HasFromLabel="false" HasToLabel="false" Height="374" Id="86nxFG6GAqACcw4N" MetaModelElement="M6nxFG6GAqACcw4M" Model="M6nxFG6GAqACcw4M" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestResetLabels="false" Selectable="true" ShowConnectorName="2" To="6YtxFG6GAqACcw3q" ToConnectType="0" ToPinType="1" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="367" X="161" Y="476" ZOrder="18">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="205" Y="788"/>
+					<Points>
+						<Point X="211.0" Y="526.0"/>
+						<Point X="211.0" Y="800.0"/>
+						<Point X="478.0" Y="800.0"/>
+					</Points>
+				</DBForeignKey>
+				<DBForeignKey Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" From="3YSxFG6GAqACcw2l" FromConnectType="0" FromPinType="1" FromShapeXDiff="0" FromShapeYDiff="0" HasFromLabel="false" HasToLabel="false" Height="100" Id="6MsJFG6GAqACcw5C" MetaModelElement="qMsJFG6GAqACcw5B" Model="qMsJFG6GAqACcw5B" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestResetLabels="false" Selectable="true" ShowConnectorName="2" To="tAfxFG6GAqACcw4c" ToConnectType="0" ToPinType="1" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="300" X="671" Y="427" ZOrder="20">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="811" Y="476"/>
+					<Points>
+						<Point X="721.0" Y="477.0"/>
+						<Point X="921.0" Y="477.0"/>
+					</Points>
+				</DBForeignKey>
+				<DBForeignKey Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" From="6YtxFG6GAqACcw3q" FromConnectType="0" FromPinType="1" FromShapeXDiff="0" FromShapeYDiff="0" HasFromLabel="false" HasToLabel="false" Height="100" Id="k4KJFG6GAqACcw5Y" MetaModelElement="44KJFG6GAqACcw5X" Model="44KJFG6GAqACcw5X" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestResetLabels="false" Selectable="true" ShowConnectorName="2" To="i4KJFG6GAqACcw5b" ToConnectType="0" ToPinType="1" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="322" X="636" Y="777" ZOrder="22">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="776" Y="835"/>
+					<Points>
+						<Point X="686.0" Y="827.0"/>
+						<Point X="908.0" Y="827.0"/>
+					</Points>
+				</DBForeignKey>
+				<DBForeignKey Background="rgb(122, 207, 245)" ConnectorLabelOrientation="4" ConnectorLineJumps="4" ConnectorStyle="Follow Diagram" CreatorDiagramType="ERDiagram" Foreground="rgb(0, 0, 0)" From="tAfxFG6GAqACcw4c" FromConnectType="0" FromPinType="1" FromShapeXDiff="0" FromShapeYDiff="0" HasFromLabel="false" HasToLabel="false" Height="337" Id="J4KJFG6GAqACcw5g" MetaModelElement="h4KJFG6GAqACcw5f" Model="h4KJFG6GAqACcw5f" ModelElementNameAlignment="9" Name="" PaintThroughLabel="2" RequestRebuild="false" RequestRebuildFromEnd="false" RequestRebuildToEnd="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestResetLabels="false" Selectable="true" ShowConnectorName="2" To="i4KJFG6GAqACcw5b" ToConnectType="0" ToPinType="1" ToShapeXDiff="0" ToShapeYDiff="0" UseFromShapeCenter="true" UseToShapeCenter="true" Width="100" X="968" Y="494" ZOrder="24">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="0" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="None" Visible="true" Width="20" X="1028" Y="682"/>
+					<Points>
+						<Point X="1018.0" Y="544.0"/>
+						<Point X="1018.0" Y="781.0"/>
+					</Points>
+				</DBForeignKey>
+			</Connectors>
+		</ERDiagram>
+	</Diagrams>
+</Project>
