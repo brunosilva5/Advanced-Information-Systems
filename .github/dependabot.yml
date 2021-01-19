@@ -4,13 +4,12 @@ version: 2
 updates:
   # Enable version updates for pip
   - package-ecosystem: "pip"
-    directory: "backend/"
-    schedule:
-      interval: "daily"
-  
-  # Manter dependências para npm
-  - package-ecosystem: "npm"
-    directory: "frontend/"
+    directory: "Final Work Pratical/backend/"
     schedule:
       interval: "daily"
 
+  # Manter dependências para npm
+  - package-ecosystem: "npm"
+    directory: "Final Work Pratical/frontend/"
+    schedule:
+      interval: "daily"
