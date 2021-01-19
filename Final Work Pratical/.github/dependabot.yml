@@ -1,0 +1,16 @@
+# dependabot.yml - Enables dependabot
+
+version: 2
+updates:
+  # Enable version updates for pip
+  - package-ecosystem: "pip"
+    directory: "backend/"
+    schedule:
+      interval: "daily"
+  
+  # Manter dependências para npm
+  - package-ecosystem: "npm"
+    directory: "frontend/"
+    schedule:
+      interval: "daily"
+
