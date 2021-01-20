@@ -10,7 +10,9 @@
 
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-app-bar-title>{{ currentName }}</v-app-bar-title>
+      <v-app-bar-title>
+        <h2>{{ currentName }}</h2>
+      </v-app-bar-title>
 
       <v-spacer></v-spacer>
 
@@ -43,7 +45,9 @@
 export default {
   computed: {
     currentName() {
-      return this.$route.fullPath;
+      const path = this.$nuxt.$route.path.split("/");
+      let name = path[path.length - 1];
+      return name.charAt(0).toUpperCase() + name.slice(1);
     },
   },
 };
