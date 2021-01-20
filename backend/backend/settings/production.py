@@ -12,3 +12,6 @@ SECURE_SSL_REDIRECT = True
 SECRET_KEY = env["SECRET_KEY"]
 
 DEBUG = False
+
+# Allow all host headers
+ALLOWED_HOSTS = ["swotlab.herokuapp.com", "localhost", "127.0.0.1"]
