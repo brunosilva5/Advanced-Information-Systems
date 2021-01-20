@@ -151,7 +151,7 @@ SIMPLE_EMAIL = {
     "EMAIL_CONFIRMATION": {
         "USER_EMAIL_ADDRESS": os.getenv("email_address"),
         "USER_EMAIL_PASSWORD": os.getenv("email_password"),
-        "EMAIL_SUBJECT": "Bem-vindo! Por favor confirme a sua conta",
+        "EMAIL_SUBJECT": "Welcome to SWOTLab! Please confirm your account",
         "WEBSITE_DOMAIN": "somedomain",
         "HASH_ID_SALT": os.getenv("SECRET_KEY", "some salt"),
         "SEND_IN_DEBUG": False,
