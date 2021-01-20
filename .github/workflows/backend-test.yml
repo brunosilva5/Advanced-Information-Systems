@@ -6,15 +6,15 @@ on:
   # opening a pull request to master and develop branch will be a trigger
   pull_request:
     branches:
-      - master
+      - main
   # any code pushed to master and develop branch will also be a trigger
   push:
     branches:
-      - master
+      - main
   
 defaults:
   run:
-    working-directory: Final Work Pratical/backend
+    working-directory: backend
 
 # three job definition
 jobs:
