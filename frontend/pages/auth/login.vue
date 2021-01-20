@@ -94,28 +94,11 @@ export default {
     loading: false,
     // Property for showing password in login tab
     show_login_password: false,
-    // Property for showing password 1 in register tab
-    show_register_password1: false,
-    // Property for showing password 2 in register tab
-    show_register_password2: false,
 
     // Login Payload
     login: {
       email: "test@email.com",
       password: "test321123",
-    },
-    // Register payload
-    register: {
-      NIF: "",
-      company: "",
-      phone_number: "",
-      user: {
-        email: "",
-        first_name: "",
-        last_name: "",
-        password: "",
-        confirm_password: "",
-      },
     },
   }),
   // Methods

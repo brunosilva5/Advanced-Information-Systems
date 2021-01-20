@@ -48,6 +48,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    "@nuxtjs/auth-next",
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -78,6 +79,45 @@ export default {
     },
     icons: {
       iconfont: "md", // Material design icons
+    },
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        scheme: "refresh",
+        token: {
+          property: "access",
+          maxAge: 300,
+          // type: 'Bearer'
+        },
+        refreshToken: {
+          property: "refresh",
+          data: "refresh",
+          maxAge: 24 * 60 * 60,
+        },
+        user: {
+          property: "",
+          // autoFetch: true
+        },
+        endpoints: {
+          login: {
+            url: "/users/auth/login/",
+            method: "post",
+            propertyName: "access",
+          },
+          refresh: { url: "/users/auth/login/refresh/", method: "post" },
+          user: { url: "/users/me/", method: "get", propertyName: "" },
+          logout: false,
+        },
+        autoLogout: false,
+      },
+    },
+    redirect: {
+      login: "/login",
+      logout: "/",
+      callback: "/",
+      home: "/",
     },
   },
 
