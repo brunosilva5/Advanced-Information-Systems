@@ -192,6 +192,6 @@ SIMPLE_EMAIL = {
         "EMAIL_SUBJECT": "Welcome to SWOTLab! Please confirm your account",
         "WEBSITE_DOMAIN": "https://swotlab.herokuapp.com",
         "HASH_ID_SALT": os.getenv("SECRET_KEY", "some salt"),
-        "SEND_IN_DEBUG": False
+        "SEND_IN_DEBUG": True
     }
 }
