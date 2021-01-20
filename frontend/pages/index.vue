@@ -1,80 +1,41 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">HELLO</div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+  <v-container fluid fill-height class="white">
+    <v-row>
+      <v-sheet class="mx-auto white" width="50%">
+        <v-img contain src="/Logo/vector/default-monochrome-third.svg"> </v-img>
+        <v-card-title class="justify-center pt-10">
+          <div class="text-h3 first--text font-weight-regular">
+            Welcome to SWOTLab!
           </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+        </v-card-title>
+        <v-card-subtitle
+          class="first--text text-subtitle-1 font-weight-light text-justify pt-10"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl
+          eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a
+          bibendum metus. Donec scelerisque sollicitudin enim eu venenatis. Duis
+          tincidunt laoreet ex, in pretium orci vestibulum eget. Class aptent
+          taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Duis pharetra luctus lacus ut vestibulum. Maecenas ipsum
+          lacus, lacinia quis posuere ut, pulvinar vitae dolor. Integer eu nibh
+          at nisi ullamcorper sagittis id vel leo. Integer feugiat faucibus
+          libero, at maximus nisl suscipit posuere.
+        </v-card-subtitle>
+        <v-card-actions class="justify-center pt-10">
+          <v-btn
+            nuxt
+            depressed
+            color="third white--text"
+            x-large
+            to="/dashboard"
           >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
+            <v-icon class="ma-2"> speed </v-icon>
+            Get Started
+          </v-btn>
         </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+      </v-sheet>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
