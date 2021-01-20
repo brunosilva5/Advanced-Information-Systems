@@ -1,10 +1,10 @@
 <template>
-  <v-container fill-height class="primary" fluid>
+  <v-container fill-height class="first" fluid>
     <v-card class="mx-auto" width="500">
       <v-card-title class="title font-weight-regular justify-space-between">
-        <p class="text-h3 font-weight-light">{{ currentTitle }}</p>
+        <div class="text-h4 font-weight-light">{{ currentTitle }}</div>
         <v-avatar
-          color="primary lighten-2"
+          color="third lighten-2"
           class="subheading white--text"
           size="24"
           v-text="step"
@@ -27,9 +27,9 @@
                       rules="required"
                     >
                       <v-text-field
-                        v-model="register.user.first_name"
+                        v-model="register.first_name"
                         :error-messages="errors"
-                        label="Primeiro nome(s)*"
+                        label="First name*"
                         maxlength="20"
                         autocomplete="given-name"
                       ></v-text-field>
@@ -45,9 +45,9 @@
                       rules="required"
                     >
                       <v-text-field
-                        v-model="register.user.last_name"
+                        v-model="register.last_name"
                         :error-messages="errors"
-                        label="Apelido(s)*"
+                        label="Last name*"
                         autocomplete="family-name"
                       ></v-text-field>
                     </ValidationProvider>
@@ -62,76 +62,17 @@
                       rules="required|email"
                     >
                       <v-text-field
-                        v-model="register.user.email"
+                        v-model="register.email"
                         :error-messages="errors"
                         prepend-icon="email"
                         label="Email*"
-                        hint="exemplo@email.com"
+                        hint="example@email.com"
                         autocomplete="email"
                       ></v-text-field>
                     </ValidationProvider>
                   </v-col>
 
                   <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-                  <!-- NIF -->
-                  <v-col cols="12">
-                    <ValidationProvider
-                      v-slot="{ errors }"
-                      vid="NIF"
-                      name="NIF"
-                      rules="required"
-                    >
-                      <v-text-field
-                        v-model="register.NIF"
-                        :error-messages="errors"
-                        prepend-icon="perm_identity"
-                        label="NIF*"
-                        maxlength="9"
-                        counter
-                        hint="Número de Identificação Fiscal"
-                      ></v-text-field>
-                    </ValidationProvider>
-                  </v-col>
-                  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-
-                  <!-- Company -->
-                  <v-col cols="12">
-                    <ValidationProvider
-                      v-slot="{ errors }"
-                      vid="company"
-                      name="Empresa"
-                    >
-                      <v-text-field
-                        v-model="register.company"
-                        :error-messages="errors"
-                        prepend-icon="business"
-                        label="Empresa"
-                        hint="Campo opcional. A empresa onde trabalha."
-                        autocomplete="organization"
-                      ></v-text-field>
-                    </ValidationProvider>
-                  </v-col>
-                  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-
-                  <!-- Phone number -->
-                  <v-col cols="12">
-                    <ValidationProvider
-                      v-slot="{ errors }"
-                      vid="phone_number"
-                      name="Telemóvel"
-                      rules="required"
-                    >
-                      <v-text-field
-                        v-model="register.phone_number"
-                        :error-messages="errors"
-                        prepend-icon="phone"
-                        maxlength="15"
-                        label="Número telemóvel*"
-                        hint="Indicativo por defeito: +351"
-                        autocomplete="tel"
-                      ></v-text-field>
-                    </ValidationProvider>
-                  </v-col>
 
                   <!-- Password -->
                   <v-col cols="12">
@@ -142,7 +83,7 @@
                       rules="required"
                     >
                       <v-text-field
-                        v-model="register.user.password"
+                        v-model="register.password"
                         :error-messages="errors"
                         prepend-icon="vpn_key"
                         :append-icon="
@@ -171,7 +112,7 @@
                       rules="required"
                     >
                       <v-text-field
-                        v-model="register.user.confirm_password"
+                        v-model="register.confirm_password"
                         :error-messages="errors"
                         prepend-icon="vpn_key"
                         block
@@ -181,7 +122,7 @@
                             : 'visibility_off'
                         "
                         :type="show_register_password2 ? 'text' : 'password'"
-                        label="Confirmar Password*"
+                        label="Confirm Password*"
                         counter
                         autocomplete="new-password"
                         @click:append="
@@ -198,7 +139,7 @@
                       color="primary"
                       type="submit"
                       :disabled="invalid"
-                      >Registar</v-btn
+                      >Register</v-btn
                     >
                   </v-col>
                 </v-row>
@@ -214,17 +155,22 @@
               class="mb-4"
               contain
               height="128"
-              src="https://marfonbackoffice.s3.eu-west-3.amazonaws.com/frontend_images/all_white.png"
+              src="/Logo/vector/default-monochrome-black.svg"
             ></v-img>
-            <h3 class="title font-weight-light mb-2">Bem-vindo ao Marfon!</h3>
-            <span class="font-weight-light"
-              >Obrigado por se registar! Para poder efetuar login com a sua
-              conta por favor verifique a sua caixa de entrada.</span
+            <h3 class="title font-weight-light mb-2">Welcome to SWOTLab!</h3>
+            <span class="font-weight-light">
+              Thank you for registering! In order to log in with your account
+              please confirm your email.</span
             >
-            <v-divider class="mx-4"></v-divider>
+            <v-divider class="ma-4"></v-divider>
 
-            <v-btn outlined nuxt :to="{ path: '/' }"
-              >Carregue aqui para voltar ao início</v-btn
+            <v-btn
+              depressed
+              color="third"
+              class="white--text"
+              nuxt
+              :to="{ path: '/auth/login' }"
+              >Click here to login</v-btn
             >
           </div>
         </v-window-item>
@@ -241,8 +187,8 @@ export default {
     ValidationProvider,
     ValidationObserver,
   },
-  // use the auth minimal layout
-  layout: "auth",
+  // use no layout
+  layout: "empty",
 
   //middleware: ["not_authenticated"],
   data: () => ({
@@ -256,25 +202,20 @@ export default {
     step: 1,
     // Register payload
     register: {
-      NIF: "",
-      company: "",
-      phone_number: "",
-      user: {
-        email: "",
-        first_name: "",
-        last_name: "",
-        password: "",
-        confirm_password: "",
-      },
+      email: "",
+      first_name: "",
+      last_name: "",
+      password: "",
+      confirm_password: "",
     },
   }),
   computed: {
     currentTitle() {
       switch (this.step) {
         case 1:
-          return "Registar";
+          return "Register";
         default:
-          return "Registo efetuado";
+          return "Registration Successful";
       }
     },
   },
@@ -283,22 +224,12 @@ export default {
     // Register user
     async registerUser() {
       try {
-        await this.$axios.post("/clients/create/", this.register);
+        await this.$axios.post("/users/create/", this.register);
         this.step++;
       } catch (error) {
-        // Email needs manual set
-        if ("user" in error.response.data) {
-          if ("email" in error.response.data.user) {
-            this.$refs.registerForm.setErrors({
-              email: error.response.data.user.email,
-            });
-          }
-        }
         this.$refs.registerForm.setErrors(error.response.data);
       }
     },
   },
 };
 </script>
-
-<style></style>

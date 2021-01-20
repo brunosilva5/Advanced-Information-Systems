@@ -1,12 +1,12 @@
 <template>
-  <v-container fill-height class="primary" fluid>
+  <v-container fill-height class="first" fluid>
     <v-card :loading="loading ? 'accent' : null" class="mx-auto px-4">
-      <v-card-title class="primary--text">
+      <v-card-title class="first--text">
         <p class="text-h3 font-weight-light">Login</p>
       </v-card-title>
       <v-card-subtitle
-        >Ainda não se encontra registado?
-        <NuxtLink to="/register">Carregue aqui</NuxtLink></v-card-subtitle
+        >New to SWOTLab?
+        <NuxtLink to="/auth/register">Sign up now</NuxtLink></v-card-subtitle
       >
       <v-card-text>
         <ValidationObserver ref="loginForm" v-slot="{ invalid }">
@@ -61,7 +61,8 @@
               <v-col class="ml-auto text-right" cols="12" sm="3" xsm="12">
                 <v-btn
                   depressed
-                  color="primary"
+                  color="third"
+                  class="white--text"
                   :disabled="invalid"
                   type="submit"
                   >Entrar</v-btn
@@ -126,7 +127,7 @@ export default {
         await this.$auth.loginWith("local", { data: this.login });
       } catch (error) {
         this.$refs.loginForm.setErrors({
-          email: ["Email ou password incorrecto(s)"],
+          email: ["Email or password is incorrect."],
         });
       }
       this.loading = false;
