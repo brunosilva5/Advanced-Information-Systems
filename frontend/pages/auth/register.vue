@@ -155,7 +155,7 @@
               class="mb-4"
               contain
               height="128"
-              src="/Logo/vector/default-monochrome-black.svg"
+              src="/Logo/vector/default-monochrome-third.svg"
             ></v-img>
             <h3 class="title font-weight-light mb-2">Welcome to SWOTLab!</h3>
             <span class="font-weight-light">
