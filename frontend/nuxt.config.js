@@ -7,8 +7,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - frontend",
-    title: "frontend",
+    titleTemplate: "%s - SWOTLab",
+    title: "SWOTLab",
     htmlAttrs: {
       lang: "en",
     },
@@ -52,7 +52,14 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: "https://swotlab.herokuapp.com/api",
+    headers: {
+      common: {
+        Accept: "application/json, text/plain, */*",
+      },
+    },
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -114,7 +121,7 @@ export default {
       },
     },
     redirect: {
-      login: "/login",
+      login: "/auth/login",
       logout: "/",
       callback: "/",
       home: "/",

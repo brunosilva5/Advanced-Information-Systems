@@ -13,3 +13,10 @@
     </v-col>
   </v-row>
 </template>
+
+<script>
+export default {
+  // This route required authentication
+  middleware: "auth",
+};
+</script>

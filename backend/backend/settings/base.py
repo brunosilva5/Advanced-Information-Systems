@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # CORS Headers
+    "corsheaders",
     # Django Rest Framework
     "rest_framework",
     ### Custom apps ###
@@ -49,6 +51,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -192,6 +195,9 @@ SIMPLE_EMAIL = {
         "EMAIL_SUBJECT": "Welcome to SWOTLab! Please confirm your account",
         "WEBSITE_DOMAIN": "https://swotlab.herokuapp.com",
         "HASH_ID_SALT": os.getenv("SECRET_KEY", "some salt"),
-        "SEND_IN_DEBUG": False
+        "SEND_IN_DEBUG": False,
     }
 }
+
+# CORS Headers
+CORS_ALLOW_ALL_ORIGINS = True
