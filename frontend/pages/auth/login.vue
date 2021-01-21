@@ -88,7 +88,6 @@ export default {
   layout: "empty",
   // Only allow guest users to acess login
   middleware: "auth",
-  auth: "guest",
 
   data: () => ({
     loading: false,

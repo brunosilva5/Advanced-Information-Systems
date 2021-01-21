@@ -17,6 +17,6 @@
 <script>
 export default {
   // This route required authentication
-  middleware: "auth",
+  middleware: "authenticated",
 };
 </script>

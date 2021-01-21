@@ -16,24 +16,35 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
       <v-menu left bottom offset-y>
-        <template #activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">
-            <v-icon>account_circle</v-icon>
-          </v-btn>
+        <template #activator="{ on }">
+          <v-hover>
+            <v-chip
+              slot-scope="{ hover }"
+              v-ripple
+              class="first white--text"
+              :class="`elevation-${hover ? 5 : 2}`"
+              v-on="on"
+            >
+              <v-avatar class="ma-2">
+                <v-icon class="white--text">account_circle</v-icon>
+              </v-avatar>
+              {{ $auth.user.first_name }} {{ $auth.user.last_name }}
+            </v-chip>
+          </v-hover>
         </template>
 
         <v-list>
-          <v-list-item v-for="n in 5" :key="n" @click="() => {}">
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
+          <v-list-item
+            v-for="(item, i) in items"
+            :key="i"
+            @click="item.on_click"
+          >
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item>
+          <!-- Logout option -->
+          <v-list-item @click="$auth.logout()">
+            <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -43,6 +54,18 @@
 
 <script>
 export default {
+  // Data
+  data() {
+    return {
+      items: [
+        { title: "Click Me" },
+        { title: "Click Me" },
+        { title: "Click Me" },
+        { title: "Click Me 2" },
+      ],
+    };
+  },
+  // Computed properties
   computed: {
     currentName() {
       const path = this.$nuxt.$route.path.split("/");

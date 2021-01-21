@@ -190,7 +190,8 @@ export default {
   // use no layout
   layout: "empty",
 
-  //middleware: ["not_authenticated"],
+  // Only allow guest users to acess login
+  middleware: "not_authenticated",
   data: () => ({
     // Property for showing password 1
     show_register_password1: false,
