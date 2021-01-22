@@ -10,21 +10,21 @@ class User(AbstractUser):
 
     # Email Field
     email = models.EmailField(
-        _("Endereço email"),
+        _("Email address"),
         unique=True,
         error_messages={
-            "unique": _("Este email já se encontra associado a uma conta existente."),
+            "unique": _("This email is already associated with an existing account."),
         },
     )
 
     # First name field
     first_name = models.CharField(
-        _("Primeiro nome"), max_length=100, blank=False, null=False
+        _("First name"), max_length=100, blank=False, null=False
     )
 
     # Last name field
     last_name = models.CharField(
-        _("Último nome"), max_length=100, null=False, blank=False
+        _("Last name"), max_length=100, null=False, blank=False
     )
 
     # Use the custom manager
@@ -42,5 +42,5 @@ class User(AbstractUser):
         return self.get_full_name()
 
     class Meta:  # noqa
-        verbose_name = _("Utilizador")
-        verbose_name_plural = _("Utilizadores")
+        verbose_name = _("User")
+        verbose_name_plural = _("Users")

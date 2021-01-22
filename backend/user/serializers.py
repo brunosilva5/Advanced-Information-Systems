@@ -21,7 +21,7 @@ class GetTokenSerializer(TokenObtainPairSerializer):
     """
 
     default_error_messages = {
-        "no_active_account": _("O email ou a palavra-passe está incorrecto.")
+        "no_active_account": _("The email or password you entered is incorrect.")
     }
 
 
@@ -36,9 +36,7 @@ class UserSerializer(serializers.ModelSerializer):
         allow_blank=False,
         write_only=True,
         error_messages={
-            "required": _(
-                "O confirmar palavra-passe é um campo de preenchimento obrigatório."
-            ),
+            "required": _("This is a required field."),
         },
     )
 
@@ -51,7 +49,7 @@ class UserSerializer(serializers.ModelSerializer):
         # Check if passwords match
         if password != confirm_password:
             raise serializers.ValidationError(
-                {"password": _("As palavras-passes não coincidem!")}
+                {"password": _("Passwords do not match.")}
             )
 
         # Create user object
@@ -82,24 +80,12 @@ class UserSerializer(serializers.ModelSerializer):
             # Define required custom messages
             "password": {
                 "write_only": True,
-                "error_messages": {
-                    "required": _(
-                        "A palavra-passe é um campo de preenchimento obrigatório."
-                    )
-                },
+                "error_messages": {"required": _("Password is a required field.")},
             },
             "first_name": {
-                "error_messages": {
-                    "required": _(
-                        "O primeiro nome é um campo de preenchimento obrigatório."
-                    )
-                },
+                "error_messages": {"required": _("First name is a required field.")},
             },
             "last_name": {
-                "error_messages": {
-                    "required": _(
-                        "O último nome é um campo de preenchimento obrigatório."
-                    )
-                },
+                "error_messages": {"required": _("Last name is a required field.")},
             },
         }
