@@ -20,6 +20,11 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <template #append>
+        <div class="pa-2">
+          <v-btn block> Help center </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
   </div>
 </template>
@@ -28,11 +33,7 @@
 export default {
   data() {
     return {
-      items: [
-        { title: "Dashboard", icon: "dashboard" },
-        { title: "Photos", icon: "mdi-image" },
-        { title: "About", icon: "mdi-help-box" },
-      ],
+      items: [{ title: "Analysis dashboard", icon: "dashboard" }],
       right: null,
     };
   },

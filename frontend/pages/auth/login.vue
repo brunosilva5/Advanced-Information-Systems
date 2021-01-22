@@ -1,8 +1,8 @@
 <template>
   <v-container fill-height class="first" fluid>
-    <v-card :loading="loading ? 'accent' : null" class="mx-auto px-4">
+    <v-card :loading="loading ? 'third' : null" class="mx-auto px-4">
       <v-card-title class="first--text">
-        <p class="text-h3 font-weight-light">Login</p>
+        <p class="text-h4 font-weight-light">Login</p>
       </v-card-title>
       <v-card-subtitle
         >New to SWOTLab?

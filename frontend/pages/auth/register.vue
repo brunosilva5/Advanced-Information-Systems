@@ -1,8 +1,10 @@
 <template>
   <v-container fill-height class="first" fluid>
-    <v-card class="mx-auto" width="500">
+    <v-card :loading="loading ? 'third' : null" class="mx-auto" width="500">
       <v-card-title class="title font-weight-regular justify-space-between">
-        <div class="text-h4 font-weight-light">{{ currentTitle }}</div>
+        <div class="text-h4 font-weight-light" style="word-break: normal">
+          {{ currentTitle }}
+        </div>
         <v-avatar
           color="third lighten-2"
           class="subheading white--text"
@@ -11,7 +13,7 @@
         ></v-avatar>
       </v-card-title>
 
-      <v-window v-model="step">
+      <v-window v-model="step" touchless>
         <v-window-item :value="1">
           <!-- Personal Information -->
           <v-card-text>
@@ -29,7 +31,7 @@
                       <v-text-field
                         v-model="register.first_name"
                         :error-messages="errors"
-                        label="First name*"
+                        label="First name"
                         maxlength="20"
                         autocomplete="given-name"
                       ></v-text-field>
@@ -47,7 +49,7 @@
                       <v-text-field
                         v-model="register.last_name"
                         :error-messages="errors"
-                        label="Last name*"
+                        label="Last name"
                         autocomplete="family-name"
                       ></v-text-field>
                     </ValidationProvider>
@@ -65,7 +67,7 @@
                         v-model="register.email"
                         :error-messages="errors"
                         prepend-icon="email"
-                        label="Email*"
+                        label="Email"
                         hint="example@email.com"
                         autocomplete="email"
                       ></v-text-field>
@@ -92,7 +94,7 @@
                             : 'visibility_off'
                         "
                         :type="show_register_password1 ? 'text' : 'password'"
-                        label="Password*"
+                        label="Password"
                         counter
                         autocomplete="new-password"
                         @click:append="
@@ -122,7 +124,7 @@
                             : 'visibility_off'
                         "
                         :type="show_register_password2 ? 'text' : 'password'"
-                        label="Confirm Password*"
+                        label="Confirm Password"
                         counter
                         autocomplete="new-password"
                         @click:append="
@@ -136,7 +138,8 @@
                   <v-col class="ml-auto text-right" cols="12" sm="3" xsm="12">
                     <v-btn
                       depressed
-                      color="primary"
+                      color="third"
+                      class="white--text"
                       type="submit"
                       :disabled="invalid"
                       >Register</v-btn
@@ -224,12 +227,14 @@ export default {
   methods: {
     // Register user
     async registerUser() {
+      this.loading = true;
       try {
         await this.$axios.post("/users/create/", this.register);
         this.step++;
       } catch (error) {
         this.$refs.registerForm.setErrors(error.response.data);
       }
+      this.loading = false;
     },
   },
 };

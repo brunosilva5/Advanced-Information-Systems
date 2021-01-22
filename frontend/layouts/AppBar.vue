@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar absolute app color="third" shrink-on-scroll>
+    <v-app-bar absolute app color="third" dense="">
       <template #img="{ props }">
         <v-img
           v-bind="props"
@@ -43,6 +43,7 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
           <!-- Logout option -->
+          <v-divider></v-divider>
           <v-list-item @click="$auth.logout()">
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
@@ -58,7 +59,7 @@ export default {
   data() {
     return {
       items: [
-        { title: "Click Me" },
+        { title: "My profile" },
         { title: "Click Me" },
         { title: "Click Me" },
         { title: "Click Me 2" },
