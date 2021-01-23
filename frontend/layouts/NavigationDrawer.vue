@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-navigation-drawer app permanent class="first">
-      <v-list-item class="py-5" nuxt link to="/">
+      <v-list-item class="py-5" nuxt link to="/analysis-dashboard">
         <v-img src="/Logo/vector/default-monochrome-white.svg"></v-img>
       </v-list-item>
 

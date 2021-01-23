@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "rest_framework",
     ### Custom apps ###
     "user",
+    "swot_analysis",
     "simple_email",
     "simple_email.email_confirmation",
 ]
@@ -89,9 +90,9 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "backend",
-    }
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "swotlab_db.sqlite3",
+    },
 }
 import dj_database_url
 

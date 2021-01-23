@@ -17,6 +17,12 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
     ],
+    script: [
+      {
+        src:
+          "https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js",
+      },
+    ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
@@ -31,7 +37,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/vee-validate"],
+  plugins: [{ src: "~/plugins/vee-validate", ssr: true }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

@@ -10,7 +10,6 @@ from rest_framework import mixins, generics
 
 
 from .serializers import UserSerializer, GetTokenSerializer
-from .models import User
 
 
 class CreateUserView(APIView):
