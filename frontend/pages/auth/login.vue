@@ -65,7 +65,7 @@
                   class="white--text"
                   :disabled="invalid"
                   type="submit"
-                  >Entrar</v-btn
+                  >Login</v-btn
                 >
               </v-col>
             </v-row>
