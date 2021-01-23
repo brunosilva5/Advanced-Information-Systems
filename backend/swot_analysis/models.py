@@ -6,7 +6,7 @@ from user.models import User
 class SWOTAnalysis(models.Model):
 
     # User associated with this analysis
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="analyses")
 
     # Title of the analysis
     title = models.CharField(

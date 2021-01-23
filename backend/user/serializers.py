@@ -11,7 +11,7 @@ from django.core.exceptions import ValidationError
 
 from simple_email.email_confirmation import send_confirmation_email
 
-
+from swot_analysis.serializers import SWOTAnalysisSerializer
 from .models import User
 
 
@@ -30,6 +30,9 @@ class UserSerializer(serializers.ModelSerializer):
     """
     User model serializer
     """
+
+    # User SWOT Analyses (nested serialization)
+    analyses = SWOTAnalysisSerializer(many=True, read_only=True)
 
     # Additional field
     confirm_password = serializers.CharField(
@@ -75,6 +78,7 @@ class UserSerializer(serializers.ModelSerializer):
             "last_name",
             "password",
             "confirm_password",
+            "analyses",
         ]
         extra_kwargs = {
             # Define required custom messages
