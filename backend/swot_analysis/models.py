@@ -15,7 +15,7 @@ class SWOTAnalysis(models.Model):
 
     # Description of the analysis
     description = models.CharField(
-        _("Analysis short description"), max_length=300, blank=False, null=True
+        _("Analysis short description"), max_length=300, blank=True, null=True
     )
 
     # Starting date of the analysis (auto generated at creation)
