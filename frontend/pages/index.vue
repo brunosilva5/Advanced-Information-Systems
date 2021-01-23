@@ -112,7 +112,7 @@ export default {
       let el = document.querySelector("#defaultmonochrome-third");
       let myAnimation = new LazyLinePainter(el, {
         ease: "easeInExpo",
-        strokeWidth: 0.8,
+        strokeWidth: 0.3,
         strokeOpacity: 1,
         strokeCap: "round",
       });
