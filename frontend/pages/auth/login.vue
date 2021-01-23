@@ -96,8 +96,8 @@ export default {
 
     // Login Payload
     login: {
-      email: "test@email.com",
-      password: "test321123",
+      email: "",
+      password: "",
     },
   }),
   // Methods
