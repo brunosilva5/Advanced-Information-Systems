@@ -6,7 +6,11 @@ from user.models import User
 class SWOTAnalysis(models.Model):
 
     # User associated with this analysis
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="analyses")
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="analyses",
+    )
 
     # Title of the analysis
     title = models.CharField(
@@ -27,8 +31,11 @@ class SWOTAnalysis(models.Model):
         CLOSED = 2, _("Closed")
         ARCHIVED = 3, _("Archived")
 
-    state = models.IntegerField(choices=States.choices, default=States.IN_PROGRESS)
+    state = models.IntegerField(
+        choices=States.choices,
+        default=States.IN_PROGRESS,
+    )
 
-    class Meta:  # noqa
+    class Meta:
         verbose_name = _("SWOT analysis")
         verbose_name_plural = _("SWOT analyses")

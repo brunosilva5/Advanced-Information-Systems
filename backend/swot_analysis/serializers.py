@@ -9,7 +9,8 @@ from .models import SWOTAnalysis
 
 class SWOTAnalysisSerializer(serializers.ModelSerializer):
 
-    # This is needed to display the string version of the state instead of integer version
+    # This is needed to display the string version of
+    #  the state instead of integer version
     state = serializers.CharField(source="get_state_display", read_only=True)
 
     class Meta:
@@ -19,11 +20,6 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             "user": {"read_only": True, "required": False},
         }
-
-    # # Serialize user representation in JSON response
-    # def to_representation(self, instance):
-    #     self.fields["user"] = UserSerializer(read_only=True)
-    #     return super(SWOTAnalysisSerializer, self).to_representation(instance)
 
     # Define user to currently logged in user
     def create(self, validated_data):
