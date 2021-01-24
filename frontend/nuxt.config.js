@@ -133,7 +133,7 @@ export default {
       login: "/auth/login",
       logout: "/",
       callback: "/",
-      home: "/dashboard",
+      home: "/analysis",
     },
   },
 
