@@ -38,7 +38,9 @@
           <v-list-item
             v-for="(item, i) in bar_items"
             :key="i"
-            @click="item.on_click"
+            :to="item.link"
+            link
+            nuxt
           >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
@@ -100,12 +102,7 @@ export default {
   data() {
     return {
       drawer: false,
-      bar_items: [
-        { title: "My profile" },
-        { title: "Click Me" },
-        { title: "Click Me" },
-        { title: "Click Me 2" },
-      ],
+      bar_items: [{ title: "My profile", link: "/profile" }],
       selectedItem: 0,
       drawer_items: [
         { title: "Analysis dashboard", icon: "dashboard", link: "/analysis" },
