@@ -39,3 +39,6 @@ class SWOTAnalysis(models.Model):
     class Meta:
         verbose_name = _("SWOT analysis")
         verbose_name_plural = _("SWOT analyses")
+        # Make each user have unique analyses titles
+        # For more info consult requirements - RFN7
+        unique_together = ["user", "title"]
