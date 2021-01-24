@@ -1,7 +1,7 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,virtualenv,django,python,vuejs,vue,nuxtjs,nuxt,database
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,virtualenv,django,python,vuejs,vue,nuxtjs,nuxt,database
-
+.vscode
 ### Database ###
 *.accdb
 *.db
@@ -281,3 +281,5 @@ node_modules/
 yarn-error.log
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,virtualenv,django,python,vuejs,vue,nuxtjs,nuxt,database
+frontend/.vscode/settings.json
+frontend/.eslintrc.js

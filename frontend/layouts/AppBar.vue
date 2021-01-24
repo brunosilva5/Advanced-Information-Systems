@@ -1,16 +1,16 @@
 <template>
   <div>
-    <v-app-bar absolute app color="third" dense="">
+    <v-app-bar app color="first" dense="">
       <template #img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(19,84,122,.2), rgba(128,208,199,.6)"
-        ></v-img>
+        <v-img v-bind="props"></v-img>
       </template>
 
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up white--text"
+        @click="drawer = !drawer"
+      />
 
-      <v-app-bar-title>
+      <v-app-bar-title class="white--text">
         <h2>{{ currentName }}</h2>
       </v-app-bar-title>
 
@@ -36,7 +36,7 @@
 
         <v-list>
           <v-list-item
-            v-for="(item, i) in items"
+            v-for="(item, i) in bar_items"
             :key="i"
             @click="item.on_click"
           >
@@ -50,6 +50,47 @@
         </v-list>
       </v-menu>
     </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      :permanent="!$vuetify.breakpoint.xsOnly"
+      class="first"
+      :right="$vuetify.rtl"
+    >
+      <v-list-item class="py-5">
+        <v-img src="/Logo/vector/default-monochrome-white.svg"></v-img>
+      </v-list-item>
+
+      <v-divider class="second"></v-divider>
+
+      <v-list dense nav>
+        <v-list-item-group v-model="selectedItem" color="primary">
+          <v-list-item
+            v-for="item in drawer_items"
+            :key="item.title"
+            :to="item.link"
+            link
+            nuxt
+          >
+            <v-list-item-icon>
+              <v-icon class="white--text">{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title class="white--text">{{
+                item.title
+              }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+      <template #append>
+        <div class="pa-2">
+          <v-btn block> Help center </v-btn>
+        </div>
+      </template>
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -58,12 +99,19 @@ export default {
   // Data
   data() {
     return {
-      items: [
+      drawer: false,
+      bar_items: [
         { title: "My profile" },
         { title: "Click Me" },
         { title: "Click Me" },
         { title: "Click Me 2" },
       ],
+      selectedItem: 0,
+      drawer_items: [
+        { title: "Analysis dashboard", icon: "dashboard", link: "/analysis" },
+        { title: "Create analysis", icon: "add_box", link: "/analysis/new" },
+      ],
+      right: null,
     };
   },
   // Computed properties

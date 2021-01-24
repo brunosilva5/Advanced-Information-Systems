@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <NavigationDrawer />
     <AppBar />
     <v-main>
       <nuxt-child />
@@ -9,10 +8,9 @@
 </template>
 
 <script>
-import NavigationDrawer from "./NavigationDrawer";
 import AppBar from "./AppBar";
 
 export default {
-  components: { NavigationDrawer, AppBar },
+  components: { AppBar },
 };
 </script>

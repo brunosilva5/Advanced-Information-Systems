@@ -84,7 +84,7 @@
               depressed
               color="third white--text"
               x-large
-              to="/analysis-dashboard"
+              to="/analysis"
             >
               <v-icon class="ma-2"> speed </v-icon>
               Get Started
@@ -105,10 +105,10 @@ import LazyLinePainter from "lazy-line-painter";
 
 export default {
   layout: "empty",
-  // Include lazy line painter javascript file
 
   mounted: function () {
     this.$nextTick(function () {
+      // This code runs when page is loaded and ready
       let el = document.querySelector("#defaultmonochrome-third");
       let myAnimation = new LazyLinePainter(el, {
         ease: "easeInExpo",
