@@ -5,20 +5,13 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ValidationError
 
+from .quadrant import Quadrant
+
 
 class Factor(models.Model):
     """
     Factor model of the SWOT Analysis
     """
-
-    # Possible factor types.
-    class FactorType(models.IntegerChoices):
-        """
-        Defines the possible choices for the type of the factor
-        """
-
-        INTERNAL = 0, _("Internal")
-        EXTERNAL = 1, _("External")
 
     # Possible factor classification
     class FactorClassification(models.IntegerChoices):
@@ -45,9 +38,11 @@ class Factor(models.Model):
         IMPORTANT = 3, _("Important")
         VERY_IMPORTANT = 4, _("Very Important")
 
-    # Type of factor (can be internal or external). Can't be empty
-    factor_type = models.PositiveSmallIntegerField(
-        _("Factor type"), choices=FactorType.choices, null=False, blank=False
+    # Quadrant associated with this factor
+    quadrant = models.ForeignKey(
+        Quadrant,
+        on_delete=models.CASCADE,
+        related_name="factors",
     )
 
     # Classification of the factor
@@ -73,10 +68,10 @@ class Factor(models.Model):
     )
 
     # Override clean method to validate fields
-    def clean(self, *args, **kwargs):  # pylint: disable=arguments-differ
+    def clean(self) -> None:
         # An internal factor can only have one of the
         # following classifications: ["Strength", "Weakness"]
-        if self.factor_type == self.FactorType.INTERNAL:
+        if self.quadrant.is_internal():
             allowed = [
                 self.FactorClassification.STRENGTH,
                 self.FactorClassification.WEAKNESS,
@@ -90,9 +85,9 @@ class Factor(models.Model):
                     params={"value": allowed},
                 )
 
-        # An external factor can only have one of the
-        # following classifications: ["Threat", "Opportunity"]
-        if self.factor_type == self.FactorType.EXTERNAL:
+        elif self.quadrant.is_external():
+            # An external factor can only have one of the
+            # following classifications: ["Threat", "Opportunity"]
             allowed = [
                 self.FactorClassification.THREAT,
                 self.FactorClassification.OPPORTUNITY,
@@ -106,15 +101,15 @@ class Factor(models.Model):
                     params={"value": allowed},
                 )
 
-        super(Factor, self).clean(*args, **kwargs)
+        super(Factor, self).clean()
 
     # Ovveride save method to perform full-cleaning on the model
-    def save(self, *args, **kwargs):  # pylint: disable=arguments-differ
+    def save(self, *args, **kwargs):
         # Call `full_clean` (which calls `clean`)
         self.full_clean()
         super(Factor, self).save(*args, **kwargs)
 
-    def get_score(self):
+    def get_score(self) -> float:
         """
         Calculates the score of the factor. The score is based
         on factor importance.
