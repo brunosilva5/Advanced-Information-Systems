@@ -2,16 +2,24 @@
 Serializer of the SWOTAnalysis model
 """
 from rest_framework import serializers
-from .models import SWOTAnalysis
-
-# from user.serializers import UserSerializer
+from ..models import SWOTAnalysis
+from ..serializers import QuadrantSerializer
 
 
 class SWOTAnalysisSerializer(serializers.ModelSerializer):
 
     # This is needed to display the string version of
     #  the state instead of integer version
-    state = serializers.CharField(source="get_state_display", read_only=True)
+    state = serializers.CharField(
+        source="get_state_display",
+        read_only=True,
+    )
+
+    # Serialize quadrants (nested serializer)
+    quadrants = QuadrantSerializer(
+        many=True,
+        read_only=True,
+    )
 
     class Meta:
         model = SWOTAnalysis

@@ -21,7 +21,9 @@ class GetTokenSerializer(TokenObtainPairSerializer):
     """
 
     default_error_messages = {
-        "no_active_account": _("The email or password you entered is incorrect.")
+        "no_active_account": _(
+            "The email or password you entered is incorrect.",
+        )
     }
 
 
@@ -84,12 +86,18 @@ class UserSerializer(serializers.ModelSerializer):
             # Define required custom messages
             "password": {
                 "write_only": True,
-                "error_messages": {"required": _("Password is a required field.")},
+                "error_messages": {
+                    "required": _("Password is a required field."),
+                },
             },
             "first_name": {
-                "error_messages": {"required": _("First name is a required field.")},
+                "error_messages": {
+                    "required": _("First name is a required field."),
+                },
             },
             "last_name": {
-                "error_messages": {"required": _("Last name is a required field.")},
+                "error_messages": {
+                    "required": _("Last name is a required field."),
+                },
             },
         }
