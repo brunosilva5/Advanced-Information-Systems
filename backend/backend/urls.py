@@ -17,7 +17,29 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="SWOTLab API",
+        default_version="v1",
+        description="Backend API for SWOTLab",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="diogosilv30@gmail.com"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=[permissions.AllowAny],
+)
+
 urlpatterns = [
+    path(
+        "api/docs/",
+        schema_view.with_ui("swagger", cache_timeout=0),
+        name="schema-redoc",  # API Docs
+    ),
     path("admin/", admin.site.urls),
     path("api/users/", include("user.urls")),
     path("api/swot_analysis/", include("swot_analysis.urls")),

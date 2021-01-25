@@ -9,8 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/rSef/settings/
 """
-
-from pathlib import Path
+import dj_database_url
 from datetime import timedelta
 import os
 
@@ -40,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # API Documentation
+    "drf_yasg",
     # CORS Headers
     "corsheaders",
     # Django Rest Framework
@@ -94,7 +95,6 @@ DATABASES = {
         "NAME": "swotlab_db.sqlite3",
     },
 }
-import dj_database_url
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES["default"].update(db_from_env)
