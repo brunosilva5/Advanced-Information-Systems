@@ -3,7 +3,7 @@ Serializer of the Quadrant model
 """
 from rest_framework import serializers
 from ..models import Quadrant
-from ..serializers import FactorSerializer
+from .factor_serializer import FactorSerializer
 
 
 class QuadrantSerializer(serializers.ModelSerializer):

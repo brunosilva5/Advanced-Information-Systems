@@ -3,7 +3,7 @@ Serializer of the SWOTAnalysis model
 """
 from rest_framework import serializers
 from ..models import SWOTAnalysis
-from ..serializers import QuadrantSerializer
+from .quadrant_serializer import QuadrantSerializer
 
 
 class SWOTAnalysisSerializer(serializers.ModelSerializer):
