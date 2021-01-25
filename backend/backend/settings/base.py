@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "corsheaders",
     # Django Rest Framework
     "rest_framework",
-    ### Custom apps ###
+    # Custom apps
     "user",
     "swot_analysis",
     "simple_email",
