@@ -77,6 +77,7 @@ class FactorViewSet(viewsets.ViewSet):
         Method for deleting a factor for a particular quadrant
         of a particular analysis of the currently authenticated user.
         """
-        factor = self.queryset.get(pk=pk)
+        qs = self.get_queryset()
+        factor = get_object_or_404(qs, pk=pk)
         factor.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
