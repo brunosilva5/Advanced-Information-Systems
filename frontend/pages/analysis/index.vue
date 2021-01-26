@@ -105,6 +105,11 @@ export default {
     ],
     analyses: [],
   }),
+  head() {
+    return {
+      title: "Analysis dashboard",
+    };
+  },
 
   created() {
     this.initialize();

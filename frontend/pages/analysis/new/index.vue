@@ -108,7 +108,12 @@ export default {
       title: "",
       description: null,
     },
-  }), // Methods
+  }),
+  head() {
+    return {
+      title: "Create SWOT analysis",
+    };
+  },
   computed: {
     currentTitle() {
       switch (this.step) {
