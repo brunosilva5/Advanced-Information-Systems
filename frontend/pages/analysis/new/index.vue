@@ -125,11 +125,10 @@ export default {
       this.loading = true;
       try {
         const response = await this.$axios.post(
-          "/swot_analysis/",
+          "/swot_analyses/",
           this.payload
         );
         this.id = response.data.id;
-        console.log(this.id);
         this.step++;
       } catch (error) {
         // Email needs manual set

@@ -36,9 +36,12 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
 
         # Prevent state for being assigned
         # (must use default, can only be updated)
-        # Use `pop` with None to delete if key exists
-        # without raising exception
-        validated_data.pop("state", None)
+        validated_data["state"] = (
+            int(
+                SWOTAnalysis.SWOTAnalysisStates.IN_PROGRESS,
+            ),
+        )
+
         return super(SWOTAnalysisSerializer, self).create(validated_data)
 
     def _validate_state(self, state):
