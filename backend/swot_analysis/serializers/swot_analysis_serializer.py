@@ -27,9 +27,9 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             "user": {"read_only": True, "required": False},
         }
-        extra_kwargs = {
-            "state": {"required": False},
-        }
+        optional_fields = [
+            "state",
+        ]
         exclude = ("user",)
 
     # Define user to currently logged in user

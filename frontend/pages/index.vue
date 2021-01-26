@@ -106,6 +106,11 @@ import LazyLinePainter from "lazy-line-painter";
 export default {
   layout: "empty",
 
+  head() {
+    return {
+      title: "Home",
+    };
+  },
   mounted: function () {
     this.$nextTick(function () {
       // This code runs when page is loaded and ready
