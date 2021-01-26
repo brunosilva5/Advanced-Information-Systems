@@ -26,14 +26,13 @@ class SWOTAnalysis(models.Model):
     starting_date = models.DateTimeField(_("Creation date"), auto_now_add=True)
 
     # Define the possible states of the analysis
-    class States(models.IntegerChoices):
+    class SWOTAnalysisStates(models.IntegerChoices):
         IN_PROGRESS = 1, _("In progress")
         CLOSED = 2, _("Closed")
-        ARCHIVED = 3, _("Archived")
 
     state = models.IntegerField(
-        choices=States.choices,
-        default=States.IN_PROGRESS,
+        choices=SWOTAnalysisStates.choices,
+        default=SWOTAnalysisStates.IN_PROGRESS,
     )
 
     class Meta:

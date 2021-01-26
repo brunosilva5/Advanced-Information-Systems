@@ -87,3 +87,38 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
                         }
                     )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def destroy(self, request, pk=None):
+        """
+        Method for deleting a particular analysis for
+        the currently authenticated user.
+        """
+        analysis = self.queryset.get(pk=pk)
+        analysis.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def partial_update(self, request, pk=None):
+        """
+        Method for partially updating a particular analysis
+        for the currently authenticated user.
+        """
+        serializer = SWOTAnalysisSerializer(
+            self.get_queryset().get(pk=pk), data=request.data, partial=True
+        )
+        if serializer.is_valid():
+            try:
+                serializer.save()
+                return Response(
+                    serializer.data,
+                    status=status.HTTP_200_OK,
+                )
+            except IntegrityError as e:
+                if "UNIQUE constraint" in e.args[0]:
+                    raise ValidationError(
+                        {
+                            "title": [
+                                "You already have an analysis with this name.",
+                            ],
+                        }
+                    )
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

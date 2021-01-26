@@ -34,35 +34,37 @@ class QuadrantSerializer(serializers.ModelSerializer):
         """
         Performs validation for `q_type`
         """
-        # Make q_type integer, important for if statements
-        q_type = int(q_type)
+        error_msg = serializers.ValidationError(
+            {
+                "q_type": _(
+                    f"Invalid choice for q_type. Valid choices are (integer part): {Quadrant.QuadrandType.choices}",  # noqa
+                ),
+            }
+        )
 
+        # Make q_type integer, important for if statements
+        try:
+            q_type = int(q_type)
+        except ValueError:
+            raise error_msg
+
+        # Check if valid choice
         if q_type not in [int(el[0]) for el in Quadrant.QuadrandType.choices]:
-            raise serializers.ValidationError(
-                {
-                    "q_type": _(
-                        f"Invalid choice for q_type. Valid choices are (integer part): {Quadrant.QuadrandType.choices}",  # noqa
-                    ),
-                }
-            )
+            raise error_msg
         return q_type
 
-    def validate(self, data):
+    def validate(self, attrs):
         """
         Performs validation for the model
         """
         # Validate `q_type`
-        data["get_q_type_display"] = self._validate_q_type(
-            data["get_q_type_display"],
+        attrs["get_q_type_display"] = self._validate_q_type(
+            attrs["get_q_type_display"],
         )
-        return data
+        return super().validate(attrs)
 
     def create(self, validated_data):
         # Replace `get_q_type_display` for
         # `q_type`
         validated_data["q_type"] = validated_data.pop("get_q_type_display")
-
-        # Create quadrant
-        quadrant = Quadrant(**validated_data)
-        quadrant.save()
-        return quadrant
+        return super().create(validated_data)

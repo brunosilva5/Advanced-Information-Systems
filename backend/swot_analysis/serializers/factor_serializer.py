@@ -35,21 +35,26 @@ class FactorSerializer(serializers.ModelSerializer):
         """
         Validates `classification` field based on quadrant.
         """
+        error_msg = serializers.ValidationError(
+            {
+                "classification": _(
+                    f"An internal factor can only have the following classifications: {list(map(Factor.FactorClassification.choices.__getitem__,allowed))}",  # noqa
+                ),
+            }
+        )
         # Make classification integer, important for if statements
-        classification = int(classification)
+        try:
+            classification = int(classification)
+        except ValueError:
+            raise error_msg
+
         if quadrant.is_internal():
             allowed = [
                 int(Factor.FactorClassification.STRENGTH),
                 int(Factor.FactorClassification.WEAKNESS),
             ]
             if classification not in allowed:
-                raise serializers.ValidationError(
-                    {
-                        "classification": _(
-                            f"An internal factor can only have the following classifications: {list(map(Factor.FactorClassification.choices.__getitem__,allowed))}",  # noqa
-                        ),
-                    }
-                )
+                raise error_msg
 
         elif quadrant.is_external():
             # An external factor can only have one of the
@@ -59,13 +64,8 @@ class FactorSerializer(serializers.ModelSerializer):
                 int(Factor.FactorClassification.OPPORTUNITY),
             ]
             if classification not in allowed:
-                raise serializers.ValidationError(
-                    {
-                        "classification": _(
-                            f"An external factor can only have the following classifications: {list(map(Factor.FactorClassification.choices.__getitem__,allowed))}",  # noqa
-                        ),
-                    }
-                )
+                raise error_msg
+
         return classification
 
     def _validate_importance(self, importance):
@@ -80,23 +80,24 @@ class FactorSerializer(serializers.ModelSerializer):
             )
         return int(importance)
 
-    def validate(self, data):
+    def validate(self, attrs):
         """
         Performs validation for the model
         """
         # An internal factor can only have one of the
         # following classifications: ["Strength", "Weakness"]
-        data["get_classification_display"] = self._validate_classification(
-            data["get_classification_display"],
-            data["quadrant"],
+        attrs["get_classification_display"] = self._validate_classification(
+            attrs["get_classification_display"],
+            attrs["quadrant"],
         )
 
-        data["get_importance_display"] = self._validate_importance(
-            data["get_importance_display"]
+        attrs["get_importance_display"] = self._validate_importance(
+            attrs["get_importance_display"]
         )
-        return data
+        return super().validate(attrs)
 
     def create(self, validated_data):
+
         # Replace `get_classification_display` for
         # `classification`
         validated_data["classification"] = validated_data.pop(
@@ -108,8 +109,4 @@ class FactorSerializer(serializers.ModelSerializer):
         validated_data["importance"] = validated_data.pop(
             "get_importance_display",
         )
-
-        # Create factor
-        factor = Factor(**validated_data)
-        factor.save()
-        return factor
+        return super().create(validated_data)
