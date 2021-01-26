@@ -107,7 +107,6 @@ export default {
     payload: {
       title: "",
       description: null,
-      state: 1, // 1=In progress https://github.com/brunosilva5/Advanced-Information-Systems/issues/22
     },
   }),
   head() {

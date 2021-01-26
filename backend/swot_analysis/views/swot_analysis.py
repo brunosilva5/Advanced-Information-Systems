@@ -10,6 +10,11 @@ from django.db import IntegrityError
 from rest_framework.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
 
+import logging
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
+
 
 class SWOTAnalysisViewSet(viewsets.ViewSet):
     """
@@ -78,6 +83,8 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
                     status=status.HTTP_201_CREATED,
                 )
             except IntegrityError as e:
+                logger.error("Exception:")
+                logger.error(e.args)
                 if "UNIQUE constraint" in e.args[0]:
                     raise ValidationError(
                         {
@@ -86,6 +93,7 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
                             ],
                         }
                     )
+        logger.error("Dont know what happened")
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, pk=None):
