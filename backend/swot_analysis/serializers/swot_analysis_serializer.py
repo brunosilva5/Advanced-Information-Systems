@@ -26,8 +26,6 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
         # Make user read only and not required
         extra_kwargs = {
             "user": {"read_only": True, "required": False},
-        }
-        extra_kwargs = {
             "state": {"required": False},
         }
         exclude = ("user",)
