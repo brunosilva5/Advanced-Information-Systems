@@ -23,11 +23,11 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SWOTAnalysis
-        fields = "__all__"
         # Make user read only and not required
         extra_kwargs = {
             "user": {"read_only": True, "required": False},
         }
+        exclude = ("user",)
 
     # Define user to currently logged in user
     def create(self, validated_data):

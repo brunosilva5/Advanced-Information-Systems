@@ -9,23 +9,22 @@ class Quadrant(models.Model):
     Quadrant model of the SWOTAnalysis
     """
 
-    class QuadrantName(models.TextChoices):
+    class QuadrandType(models.IntegerChoices):
         """
-        Defines the possible names for the quadrant
+        Defines the possible types for the quadrant
         """
 
-        STRENGTHS = "S", _("Strengths")
-        WEAKNESSES = "W", _("Weaknesses")
-        OPPORTUNITIES = "O", _("Opportunities")
-        THREATS = "T", _("Threats")
+        STRENGTHS = 1, _("Strengths")
+        WEAKNESSES = 2, _("Weaknesses")
+        OPPORTUNITIES = 3, _("Opportunities")
+        THREATS = 4, _("Threats")
 
-    # Name of the quadrant
-    name = models.CharField(
-        _("Quadrant name"),
-        max_length=1,
-        choices=QuadrantName.choices,
-        blank=False,
+    # Quadrant type
+    q_type = models.PositiveSmallIntegerField(
+        _("Quadrant type"),
+        choices=QuadrandType.choices,
         null=False,
+        blank=False,
     )
 
     # SWOT Analyse identifier (foreign key)
@@ -36,13 +35,13 @@ class Quadrant(models.Model):
     )
 
     class Meta:
-        # Ensure that each analysis does not
-        # have repeated quadrants
         constraints = [
+            # Ensure that each analysis does not
+            # have repeated quadrants
             models.UniqueConstraint(
-                fields=["name", "analysis"],
+                fields=["q_type", "analysis"],
                 name="unique_quadrant",
-            )
+            ),
         ]
 
     def is_internal(self) -> bool:
@@ -50,9 +49,9 @@ class Quadrant(models.Model):
         Returns a boolean indicating if the quadrant is internal.
         A quadrant is internal if it's Strenghts or Weaknessess quadrant.
         """
-        return self.name in [
-            self.QuadrantName.STRENGTHS,
-            self.QuadrantName.WEAKNESSES,
+        return self.q_type in [
+            self.QuadrandType.STRENGTHS,
+            self.QuadrandType.WEAKNESSES,
         ]
 
     def is_external(self) -> bool:
@@ -60,9 +59,9 @@ class Quadrant(models.Model):
         Returns a boolean indicating if the quadrant is external.
         A quadrant is external if it's Opportunities or Threats quadrant.
         """
-        return self.name in [
-            self.QuadrantName.OPPORTUNITIES,
-            self.QuadrantName.THREATS,
+        return self.q_type in [
+            self.QuadrandType.OPPORTUNITIES,
+            self.QuadrandType.THREATS,
         ]
 
     def get_total_score(self) -> float:

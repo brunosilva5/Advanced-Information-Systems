@@ -26,14 +26,14 @@ class QuadrantTestCase(TestCase):
         self.analysis = analysis
         return super().setUp()
 
-    def test_quadrant_invalid_name_choice(self):
+    def test_quadrant_invalid_q_type_choices(self):
         """
         Tests the quadrant name choices
         """
-        # Create a list with all ascii chars
-        all_choices = list(string.printable)
+        # Create a list with all digits
+        all_choices = list(map(int, list(string.digits)))
         # Create a list with valid choices
-        valid_choices = ["S", "W", "O", "T"]
+        valid_choices = [1, 2, 3, 4]
 
         # Iterate over all possible choices
         for c in all_choices:
@@ -41,15 +41,15 @@ class QuadrantTestCase(TestCase):
             # ensure that a exception is raised
             if c not in valid_choices:
                 with self.assertRaises(ValidationError) as exc:
-                    quadrant = Quadrant(name="a" * 2)
+                    quadrant = Quadrant(q_type=c)
                     quadrant.full_clean()
 
                 exception = exc.exception
-                self.assertIn("name", exception.error_dict)
-                name_exceptions = exception.error_dict["name"]
-                self.assertEqual(1, len(name_exceptions))
-                name_exception = name_exceptions[0]
-                self.assertEqual("invalid_choice", name_exception.code)
+                self.assertIn("q_type", exception.error_dict)
+                q_type_exceptions = exception.error_dict["q_type"]
+                self.assertEqual(1, len(q_type_exceptions))
+                q_type_exception = q_type_exceptions[0]
+                self.assertEqual("invalid_choice", q_type_exception.code)
 
     def test_no_duplicate_quadrants(self):
         """
@@ -57,15 +57,15 @@ class QuadrantTestCase(TestCase):
         Check: https://stackoverflow.com/questions/21458387/transactionmanagementerror-you-cant-execute-queries-until-the-end-of-the-atom
         """  # noqa
 
-        valid_choices = ["S", "W", "O", "T"]
+        valid_choices = [1, 2, 3, 4]
 
         for c in valid_choices:
             # Create quadrant
-            Quadrant.objects.create(name=c, analysis=self.analysis)
+            Quadrant.objects.create(q_type=c, analysis=self.analysis)
             try:
                 with transaction.atomic():
                     # Duplicates should be prevented.
-                    Quadrant.objects.create(name=c, analysis=self.analysis)
+                    Quadrant.objects.create(q_type=c, analysis=self.analysis)
                 self.fail("Duplicate quadrants should not be allowed.")
             except IntegrityError:
                 pass
@@ -74,12 +74,12 @@ class QuadrantTestCase(TestCase):
         """
         Tests if a quadrant is correctly classified as internal/external
         """
-        internal_names = ["S", "W"]
-        external_names = ["O", "T"]
+        internal_types = [1, 2]
+        external_types = [3, 4]
 
-        for name in internal_names:
+        for t in internal_types:
             quadrant = Quadrant.objects.create(
-                name=name,
+                q_type=t,
                 analysis=self.analysis,
             )
             self.assertTrue(
@@ -87,9 +87,9 @@ class QuadrantTestCase(TestCase):
                 "Quadrant call to `is_internal` did not correctly classify as internal",  # noqa
             )
 
-        for name in external_names:
+        for t in external_types:
             quadrant = Quadrant.objects.create(
-                name=name,
+                q_type=t,
                 analysis=self.analysis,
             )
             self.assertTrue(
@@ -103,7 +103,7 @@ class QuadrantTestCase(TestCase):
         """
         # Create a quadrant
         quadrant = Quadrant.objects.create(
-            name=Quadrant.QuadrantName.STRENGTHS,
+            q_type=Quadrant.QuadrandType.STRENGTHS,
             analysis=self.analysis,
         )
 

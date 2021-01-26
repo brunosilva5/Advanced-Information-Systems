@@ -41,4 +41,11 @@ class SWOTAnalysis(models.Model):
         verbose_name_plural = _("SWOT analyses")
         # Make each user have unique analyses titles
         # For more info consult requirements - RFN7
-        unique_together = ["user", "title"]
+        constraints = [
+            # Ensure that each analysis does not
+            # have repeated quadrants
+            models.UniqueConstraint(
+                fields=["user", "title"],
+                name="unique_analysis",
+            ),
+        ]

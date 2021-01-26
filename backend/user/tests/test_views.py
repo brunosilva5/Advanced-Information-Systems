@@ -32,14 +32,17 @@ class UserTestCase(TestCase):
         and returns a `tupple (access_token, refresh_token)`
         """
         # Create client
-        response = self.api.post(reverse("create_user"), self.valid_user_payload)
+        response = self.api.post(
+            reverse("create_user"),
+            self.valid_user_payload,
+        )
         # Assert created
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
         user = User.objects.get(id=response.data["id"])
 
         self.assertFalse(
-            user.is_active, "User field 'is_active' should be False on creation"
+            user.is_active, "User field 'is_active' should be False on creation"  # noqa
         )
 
         if verify_email:
@@ -57,10 +60,14 @@ class UserTestCase(TestCase):
 
             self.assertEqual(response.status_code, status.HTTP_200_OK)
             self.assertIn(
-                "access", response.data, msg="Missing acess token in login response"
+                "access",
+                response.data,
+                msg="Missing acess token in login response",
             )
             self.assertIn(
-                "refresh", response.data, msg="Missing refresh token in login response"
+                "refresh",
+                response.data,
+                msg="Missing refresh token in login response",
             )
             return (response.data["access"], response.data["refresh"])
         else:
@@ -73,7 +80,10 @@ class UserTestCase(TestCase):
             )
 
             # Assert that user cant login if it doesnt confirm email
-            self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+            self.assertEqual(
+                response.status_code,
+                status.HTTP_401_UNAUTHORIZED,
+            )
 
     def test_create_user_no_password(self):
         """

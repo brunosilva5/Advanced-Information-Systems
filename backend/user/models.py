@@ -13,7 +13,9 @@ class User(AbstractUser):
         _("Email address"),
         unique=True,
         error_messages={
-            "unique": _("This email is already associated with an existing account."),
+            "unique": _(
+                "This email is already associated with an existing account.",
+            ),
         },
     )
 
