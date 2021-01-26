@@ -46,13 +46,48 @@
                 >
                   Create Analysis
                 </v-btn>
+                <!-- Delete dialog -->
+                <v-dialog v-model="dialogDelete" max-width="500px">
+                  <v-card>
+                    <v-card-title class="headline"
+                      >Are you sure you want to delete this
+                      analysis?</v-card-title
+                    >
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="closeDeleteDialog"
+                        >Cancel</v-btn
+                      >
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="deleteAnalysisConfirm"
+                        >OK</v-btn
+                      >
+                      <v-spacer></v-spacer>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
               </v-toolbar>
             </template>
             <!-- Custom Field Rendering -->
             <template #item="{ item, expand, isExpanded }">
               <tr>
+                <td>
+                  <v-icon @click="expand(!isExpanded)"
+                    >keyboard_arrow_down</v-icon
+                  >
+                </td>
                 <td class="font-weight-light">#{{ item.id }}</td>
-                <td>{{ item.title }}</td>
+
+                <td>
+                  <v-btn text nuxt :to="'/analysis/' + item.id">{{
+                    item.title
+                  }}</v-btn>
+                </td>
                 <td>
                   <v-chip :color="getColor(item.state)" dark>
                     {{ item.state }}
@@ -68,9 +103,15 @@
                   }}
                 </td>
                 <td>
-                  <v-icon @click="expand(!isExpanded)"
-                    >keyboard_arrow_down</v-icon
-                  >
+                  <v-icon small class="mr-2" @click="editAnalysis(item)">
+                    edit
+                  </v-icon>
+                  <v-icon small class="mr-2" @click="archiveAnalysis(item)">
+                    archive
+                  </v-icon>
+                  <v-icon small class="mr-2" @click="deleteAnalysis(item)">
+                    delete
+                  </v-icon>
                 </td>
               </tr>
             </template>
@@ -79,6 +120,7 @@
             <template #expanded-item="{ headers, item }">
               <td :colspan="headers.length">{{ item.description }}</td>
             </template>
+
             <!-- END OF FIELDS -->
           </v-data-table>
           <!-- End of table -->
@@ -92,39 +134,51 @@
 export default {
   // This route required authentication
   middleware: "authenticated",
+
+  async asyncData({ $axios }) {
+    const analyses = await $axios
+      .get("/swot_analyses/")
+      .then((res) => res.data);
+    return { analyses };
+  },
   data: () => ({
     expanded: [],
     title: "My analyses",
     search: "",
     dialog: false,
-    dialogDelete: false,
     headers: [
       { text: "", value: "id", align: "center", sortable: false },
+      { text: "", value: "data-table-expand" },
       { text: "Title", value: "title", align: "center" },
       { text: "State", value: "state", align: "center" },
       { text: "Created at", value: "starting_date", align: "center" },
-      { text: "", value: "data-table-expand" },
+      { text: "Actions", value: "actions", sortable: false },
     ],
-    analyses: [],
+    dialogDelete: false,
+    deleteId: null,
   }),
   head() {
     return {
       title: "Analysis dashboard",
     };
   },
-
-  created() {
-    this.initialize();
-  },
-
   methods: {
-    initialize() {
-      // Get analyses from current user
-      this.analyses = this.$auth.user.analyses;
-    },
     getColor(state) {
       if (state === "In progress") return "green";
       else return "red";
+    },
+    // Methods for deleting an analysis
+    closeDeleteDialog() {
+      this.dialogDelete = false;
+    },
+    deleteAnalysis(item) {
+      this.dialogDelete = true;
+      this.deleteId = item.id;
+    },
+    async deleteAnalysisConfirm() {
+      this.closeDeleteDialog();
+      await this.$axios.delete(`/swot_analyses/${this.deleteId}`);
+      this.$nuxt.refresh();
     },
   },
 };

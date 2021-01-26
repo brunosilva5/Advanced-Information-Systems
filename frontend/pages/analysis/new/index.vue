@@ -77,8 +77,7 @@
                     depressed
                     color="third"
                     class="white--text"
-                    nuxt
-                    :to="{ path: '/analysis/', params: { id: id } }"
+                    :href="'/analysis/' + createdId"
                     >Start working</v-btn
                   >
                 </div>
@@ -123,6 +122,9 @@ export default {
           return "Analysis creation successful";
       }
     },
+    createdId() {
+      return this.id;
+    },
   },
   methods: {
     // Create SWOT Analysis
@@ -136,8 +138,7 @@ export default {
         this.id = response.data.id;
         this.step++;
       } catch (error) {
-        // Email needs manual set
-        console.log(error);
+        this.$refs.observer.setErrors(error.response.data);
       }
       this.loading = false;
     },

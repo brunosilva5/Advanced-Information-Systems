@@ -27,12 +27,12 @@ class SWOTAnalysis(models.Model):
 
     # Define the possible states of the analysis
     class SWOTAnalysisStates(models.IntegerChoices):
-        IN_PROGRESS = 1, _("In progress")
+        OPEN = 1, _("Open")
         CLOSED = 2, _("Closed")
 
     state = models.IntegerField(
         choices=SWOTAnalysisStates.choices,
-        default=SWOTAnalysisStates.IN_PROGRESS,
+        default=SWOTAnalysisStates.OPEN,
     )
 
     class Meta:

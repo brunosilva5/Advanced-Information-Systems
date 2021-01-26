@@ -40,11 +40,7 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
 
         # Prevent state for being assigned
         # (must use default, can only be updated)
-        validated_data["state"] = (
-            int(
-                SWOTAnalysis.SWOTAnalysisStates.IN_PROGRESS,
-            ),
-        )[  # noqa
+        validated_data["state"] = (int(SWOTAnalysis.SWOTAnalysisStates.OPEN,),)[  # noqa
             0
         ]  # [0] because returns tuple of length 1
         # Delete "get_state_display" key
