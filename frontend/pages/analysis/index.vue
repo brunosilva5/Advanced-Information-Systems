@@ -49,10 +49,12 @@
                 <!-- Delete dialog -->
                 <v-dialog v-model="dialogDelete" max-width="500px">
                   <v-card>
-                    <v-card-title class="headline"
-                      >Are you sure you want to delete this
-                      analysis?</v-card-title
+                    <v-card-title
+                      class="justify-center"
+                      style="word-break: normal"
                     >
+                      <div>Are you sure you want to delete this analysis?</div>
+                    </v-card-title>
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn
@@ -71,6 +73,34 @@
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
+                <!-- Archive dialog -->
+                <v-dialog v-model="dialogArchive" max-width="500px">
+                  <v-card>
+                    <v-card-title
+                      class="justify-center"
+                      style="word-break: normal"
+                    >
+                      <div>Are you sure you want to close this analysis?</div>
+                    </v-card-title>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="closeArchiveDialog"
+                        >Cancel</v-btn
+                      >
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="archiveAnalysisConfirm"
+                        >OK</v-btn
+                      >
+                      <v-spacer></v-spacer>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
+                <!-- Archive dialog -->
               </v-toolbar>
             </template>
             <!-- Custom Field Rendering -->
@@ -106,8 +136,23 @@
                   <v-icon small class="mr-2" @click="editAnalysis(item)">
                     edit
                   </v-icon>
-                  <v-icon small class="mr-2" @click="archiveAnalysis(item)">
+                  <!-- If open show archive icon -->
+                  <v-icon
+                    v-if="item.state === 'Open'"
+                    small
+                    class="mr-2"
+                    @click="archiveAnalysis(item)"
+                  >
                     archive
+                  </v-icon>
+                  <!-- If closed show unarchive icon -->
+                  <v-icon
+                    v-else
+                    small
+                    class="mr-2"
+                    @click="unarchiveAnalysis(item)"
+                  >
+                    unarchive
                   </v-icon>
                   <v-icon small class="mr-2" @click="deleteAnalysis(item)">
                     delete
@@ -145,7 +190,6 @@ export default {
     expanded: [],
     title: "My analyses",
     search: "",
-    dialog: false,
     headers: [
       { text: "", value: "id", align: "center", sortable: false },
       { text: "", value: "data-table-expand" },
@@ -154,17 +198,22 @@ export default {
       { text: "Created at", value: "starting_date", align: "center" },
       { text: "Actions", value: "actions", sortable: false },
     ],
+    // Delete actions
     dialogDelete: false,
     deleteId: null,
+    // Archive actions
+    dialogArchive: false,
+    archiveId: null,
   }),
   head() {
     return {
       title: "Analysis dashboard",
     };
   },
+
   methods: {
     getColor(state) {
-      if (state === "In progress") return "green";
+      if (state === "Open") return "green";
       else return "red";
     },
     // Methods for deleting an analysis
@@ -178,6 +227,20 @@ export default {
     async deleteAnalysisConfirm() {
       this.closeDeleteDialog();
       await this.$axios.delete(`/swot_analyses/${this.deleteId}`);
+      this.$nuxt.refresh();
+    },
+    // Methods for archiving an analysis
+    closeArchiveDialog() {
+      this.dialogArchive = false;
+    },
+    archiveAnalysis(item) {
+      this.dialogArchive = true;
+      this.archiveId = item.id;
+    },
+    async archiveAnalysisConfirm() {
+      this.closeArchiveDialog();
+      const payload = { state: 1 };
+      await this.$axios.patch(`/swot_analyses/${this.archiveId}`, payload);
       this.$nuxt.refresh();
     },
   },

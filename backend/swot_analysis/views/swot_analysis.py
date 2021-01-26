@@ -92,7 +92,8 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
         Method for deleting a particular analysis for
         the currently authenticated user.
         """
-        analysis = self.queryset.get(pk=pk)
+        qs = self.get_queryset()
+        analysis = get_object_or_404(qs, pk=pk)
         analysis.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -101,8 +102,12 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
         Method for partially updating a particular analysis
         for the currently authenticated user.
         """
+        qs = self.get_queryset()
+        analysis = get_object_or_404(qs, pk=pk)
         serializer = SWOTAnalysisSerializer(
-            self.get_queryset().get(pk=pk), data=request.data, partial=True
+            analysis,
+            data=request.data,
+            partial=True,
         )
         if serializer.is_valid():
             try:

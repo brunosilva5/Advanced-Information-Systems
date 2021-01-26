@@ -81,7 +81,12 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
         return super().validate(attrs)
 
     def update(self, instance, validated_data):
-
         # Replace `get_state_display` key with `state`
+        if "get_state_display" not in validated_data:
+            raise serializers.ValidationError(
+                {
+                    "state": "This field is required",
+                }
+            )
         validated_data["state"] = validated_data.pop("get_state_display")
         return super().update(instance, validated_data)
