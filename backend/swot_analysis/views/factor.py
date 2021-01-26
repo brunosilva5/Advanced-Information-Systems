@@ -10,12 +10,6 @@ from django.shortcuts import get_object_or_404
 from ..models import Factor, SWOTAnalysis
 
 
-import logging
-
-# Get an instance of a logger
-logger = logging.getLogger(__name__)
-
-
 class FactorViewSet(viewsets.ViewSet):
     """
     A Viewset to create or delete a factor
