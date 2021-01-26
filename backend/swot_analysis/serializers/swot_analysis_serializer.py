@@ -13,6 +13,7 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
     #  the state instead of integer version
     state = serializers.CharField(
         source="get_state_display",
+        required=False,
     )
 
     # Serialize quadrants (nested serializer)
@@ -43,7 +44,11 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
             int(
                 SWOTAnalysis.SWOTAnalysisStates.IN_PROGRESS,
             ),
-        )
+        )[  # noqa
+            0
+        ]  # [0] because returns tuple of length 1
+        # Delete "get_state_display" key
+        validated_data.pop("get_state_display", None)
 
         return super(SWOTAnalysisSerializer, self).create(validated_data)
 
@@ -73,9 +78,10 @@ class SWOTAnalysisSerializer(serializers.ModelSerializer):
         return state
 
     def validate(self, attrs):
-        attrs["get_state_display"] = self._validate_state(
-            attrs["get_state_display"],
-        )
+        if "get_state_display" in attrs:
+            attrs["get_state_display"] = self._validate_state(
+                attrs["get_state_display"],
+            )
         return super().validate(attrs)
 
     def update(self, instance, validated_data):
