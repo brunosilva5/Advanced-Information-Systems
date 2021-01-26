@@ -10,11 +10,6 @@ from django.db import IntegrityError
 from rest_framework.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
 
-import logging
-
-# Get an instance of a logger
-logger = logging.getLogger(__name__)
-
 
 class SWOTAnalysisViewSet(viewsets.ViewSet):
     """
@@ -82,18 +77,14 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
                     serializer.data,
                     status=status.HTTP_201_CREATED,
                 )
-            except IntegrityError as e:
-                logger.error("Exception:")
-                logger.error(e.args)
-                if "UNIQUE constraint" in e.args[0]:
-                    raise ValidationError(
-                        {
-                            "title": [
-                                "You already have an analysis with this name.",
-                            ],
-                        }
-                    )
-        logger.error("Dont know what happened")
+            except IntegrityError:  # noqa (The message varies depending on the database engine)
+                raise ValidationError(
+                    {
+                        "title": [
+                            "You already have an analysis with this name.",
+                        ],
+                    }
+                )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, pk=None):
@@ -120,13 +111,12 @@ class SWOTAnalysisViewSet(viewsets.ViewSet):
                     serializer.data,
                     status=status.HTTP_200_OK,
                 )
-            except IntegrityError as e:
-                if "UNIQUE constraint" in e.args[0]:
-                    raise ValidationError(
-                        {
-                            "title": [
-                                "You already have an analysis with this name.",
-                            ],
-                        }
-                    )
+            except IntegrityError:  # noqa (The message varies depending on the database engine)
+                raise ValidationError(
+                    {
+                        "title": [
+                            "You already have an analysis with this name.",
+                        ],
+                    }
+                )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

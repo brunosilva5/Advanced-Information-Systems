@@ -73,15 +73,14 @@ class QuadrantViewSet(viewsets.ViewSet):
                     serializer.data,
                     status=status.HTTP_201_CREATED,
                 )
-            except IntegrityError as e:
-                if "UNIQUE constraint" in e.args[0]:
-                    raise ValidationError(
-                        {
-                            "q_type": [
-                                "You already have a quadrant of this type.",
-                            ],
-                        }
-                    )
+            except IntegrityError:  # noqa (The message varies depending on the database engine)
+                raise ValidationError(
+                    {
+                        "q_type": [
+                            "You already have a quadrant of this type.",
+                        ],
+                    }
+                )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, pk=None, swot_analysis_pk=None):
