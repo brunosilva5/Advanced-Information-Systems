@@ -85,7 +85,7 @@
       </v-list>
       <template #append>
         <div class="pa-2">
-          <v-btn block> Help center </v-btn>
+          <v-btn nuxt to="/help-center" block> Help center </v-btn>
         </div>
       </template>
     </v-navigation-drawer>

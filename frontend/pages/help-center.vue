@@ -1,5 +1,5 @@
 <template>
-  <v-container fill-height>
+  <v-container fluid fill-height class="first">
     <v-row class="mt-15 pa-3" justify="center" align="center">
       <v-col class="text-center" cols="12" md="10">
         <v-card height="600">
@@ -17,7 +17,7 @@
               </v-card-text>
               <v-row dense class="justify-center">
                 <v-col v-for="card in item.cards" :key="card" :cols="3">
-                  <v-card class="mx-auto" width="300" min-height="270">
+                  <v-card class="mx-auto mb-1" width="300" min-height="270">
                     <v-card-title
                       class="third--text justify-center"
                       v-text="card.title"
