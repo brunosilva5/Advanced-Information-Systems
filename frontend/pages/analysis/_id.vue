@@ -2,7 +2,7 @@
   <v-container class="align-start">
     <v-card>
       <v-card-title class="text-center justify-center py-6">
-        <h1 class="font-weight-bold display-3">
+        <h1 class="font-weight-bold display-3 second--text">
           {{ Analysis.title }}
         </h1>
       </v-card-title>
@@ -10,7 +10,7 @@
         {{ Analysis.description }}
       </v-card-subtitle>
 
-      <v-tabs v-model="currentTab" color="basil" grow>
+      <v-tabs v-model="currentTab" color="second" grow>
         <v-tab v-for="item in barItems" :key="item.id">
           {{ item.name }}
         </v-tab>
@@ -20,10 +20,7 @@
         <v-tab-item v-for="item in barItems" :key="item.id">
           <v-card flat>
             <v-card-text>
-              <component
-                :is="item.component_name"
-                v-bind="currentId"
-              ></component>
+              <component :is="item.component_name" v-bind="Props"></component>
             </v-card-text>
           </v-card>
         </v-tab-item>
@@ -57,7 +54,7 @@ export default {
     barItems: [
       {
         name: "Internal factors",
-        component_name: "InternalFactorsTable",
+        component_name: "FactorsTable",
       },
       {
         name: "External factors",
@@ -69,8 +66,17 @@ export default {
     ],
   }),
   computed: {
-    currentId: function () {
-      return { id: this.Analysis.id };
+    Props: function () {
+      let props = null;
+      // If internal table
+      if (this.currentTab === 0) {
+        props = {
+          id: this.Analysis.id,
+          quadrant1Qtype: "Strengths",
+          quadrant2Qtype: "Weaknesses",
+        };
+      }
+      return props;
     },
   },
 };

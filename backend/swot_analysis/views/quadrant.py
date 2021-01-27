@@ -6,6 +6,8 @@ from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from rest_framework.exceptions import ValidationError
 from django.db import IntegrityError
+from django.shortcuts import get_object_or_404
+
 
 from ..serializers import QuadrantSerializer
 
@@ -89,6 +91,7 @@ class QuadrantViewSet(viewsets.ViewSet):
         (of the currently authenticated user)
         by given primary key.
         """
-        queryset = self.get_queryset().get(pk=pk)
-        serializer = QuadrantSerializer(queryset)
+        qs = self.get_queryset()
+        quadrant = get_object_or_404(qs, pk=pk)
+        serializer = QuadrantSerializer(quadrant)
         return Response(serializer.data)
