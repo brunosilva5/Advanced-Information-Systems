@@ -16,7 +16,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-menu left bottom offset-y>
+      <v-menu left bottom offset-y v-if="$auth.loggedIn">
         <template #activator="{ on }">
           <v-hover>
             <v-chip
