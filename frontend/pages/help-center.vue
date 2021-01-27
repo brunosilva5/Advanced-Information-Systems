@@ -1,59 +1,48 @@
 <template>
-  <v-row class="mt-10 pa-3" justify="center" align="center">
-    <v-col class="text-center" cols="12" md="6">
-      <v-card elevation="2">
-        <v-card-title>
-          <v-icon large left class="forth--text"> warning </v-icon>
-          <span class="title font-weight-light second--text"
-            >Read the steps and understand the worksheet</span
-          >
-        </v-card-title>
-      </v-card>
-      <v-card elevation="2" class="mt-5">
-        <v-tabs v-model="tab" background-color="transparent" color="third" grow>
-          <v-tab v-for="item in items" :key="item">
-            {{ item.title }}
-          </v-tab>
-        </v-tabs>
-        <v-tabs-items v-model="tab" class="py-10">
-          <v-tab-item v-for="item in items" :key="item.tab">
-            <v-card elevation="0" class="mx-16 my-auto">
-              <v-card-text
-                class="first--text px-9"
-                align="start"
-                justify="start"
-                v-text="item.description"
-              ></v-card-text>
-            </v-card>
-            <v-row dense>
-              <v-col v-for="card in item.cards" :key="card" :cols="6">
-                <v-card class="mx-auto py-5 my-5" width="280" min-height="270">
-                  <v-card-title
-                    class="third--text align-center"
-                    align="center"
-                    v-text="card.title"
-                  ></v-card-title>
-                  <v-card-text
-                    class="first--text pt-3"
-                    align="start"
-                    justify="start"
-                    v-text="card.body"
-                  ></v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-tab-item>
-        </v-tabs-items>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-container fill-height>
+    <v-row class="mt-15 pa-3" justify="center" align="center">
+      <v-col class="text-center" cols="12" md="10">
+        <v-card height="600">
+          <v-card-title class="second--text text-center justify-center py-6">
+            <h1 class="font-weight-bold display-3">Help Center</h1>
+          </v-card-title>
+          <v-tabs v-model="currentTab" color="second" grow>
+            <v-tab v-for="item in barItems" :key="item.title">
+              {{ item.title }}
+            </v-tab>
+          </v-tabs>
+          <v-tabs-items v-model="currentTab">
+            <v-tab-item v-for="item in barItems" :key="item.currentTab">
+              <v-card-text class="text-center py-10" v-text="item.description">
+              </v-card-text>
+              <v-row dense class="justify-center">
+                <v-col v-for="card in item.cards" :key="card" :cols="3">
+                  <v-card class="mx-auto" width="300" min-height="270">
+                    <v-card-title
+                      class="third--text justify-center"
+                      v-text="card.title"
+                    >
+                    </v-card-title>
+                    <v-card-text
+                      class="first--text pt-3 text-justify"
+                      v-text="card.body"
+                    ></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-tab-item>
+          </v-tabs-items>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script>
 export default {
   layout: "empty",
   data: () => ({
-    tab: null,
-    items: [
+    currentTab: null,
+    barItems: [
       {
         title: "Internal factors",
         description:
