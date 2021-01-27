@@ -28,11 +28,14 @@
             name="Importance"
             rules="required"
           >
-            <v-text-field
+            <v-select
               v-model="factor.importance"
+              item-text="text"
+              item-value="value"
+              :items="possibleImportances"
               :error-messages="errors"
               label="Importance"
-            ></v-text-field>
+            ></v-select>
           </ValidationProvider>
         </v-col>
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
@@ -158,9 +161,9 @@ export default {
       } catch (err) {
         this.$refs.observer.setErrors(err.response.data);
       }
-
+      // Make nuxt refresh the contents of the page
+      this.$nuxt.refresh();
       this.clearForm();
-      //this.$axios.post("");
     },
     clearForm() {
       // First lets reset the form

@@ -14,6 +14,25 @@
         </div>
       </v-toolbar>
     </template>
+    <!-- Custom field rendering -->
+    <template #item="{ item }">
+      <tr>
+        <td>{{ item.description }}</td>
+        <td>
+          <v-chip :color="getClassificationColor(item.classification)" dark>
+            {{ item.classification }}
+          </v-chip>
+        </td>
+        <td>
+          <v-chip :color="getImportanceColor(item.importance)" dark>
+            {{ item.importance }}
+          </v-chip>
+        </td>
+        <td>
+          {{ item.score }}
+        </td>
+      </tr>
+    </template>
   </v-data-table>
 </template>
 <script>
@@ -40,7 +59,7 @@ export default {
   data: () => ({
     headers: [
       { text: "Description", value: "description" },
-      { text: "Classification", value: "Classification" },
+      { text: "Classification", value: "classification" },
       { text: "Importance", value: "importance" },
       { text: "Score", value: "score" },
     ],
@@ -75,6 +94,34 @@ export default {
 
     // Now we join the factors from both quadrants
     this.factors = [...quadrant_1.factors, ...quadrant_2.factors];
+  },
+  methods: {
+    // method for deciding the color of v-chip based on classification
+    getClassificationColor(value) {
+      switch (value) {
+        case "Strength":
+        case "Opportunity":
+          return "green";
+        case "Threat":
+        case "Weakness":
+          return "red";
+      }
+    },
+    // method for deciding the color of v-chip based on importance
+    getImportanceColor(value) {
+      switch (value) {
+        case "Unimportant":
+          return "red";
+        case "Of Little Importance":
+          return "orange";
+        case "Moderately Important":
+          return "grey darken-1";
+        case "Important":
+          return "green lighten-2";
+        case "Very Important":
+          return "green";
+      }
+    },
   },
 };
 </script>
