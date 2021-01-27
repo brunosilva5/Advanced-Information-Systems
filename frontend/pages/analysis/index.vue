@@ -100,7 +100,33 @@
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
-                <!-- Archive dialog -->
+                <!-- Unarchive dialog -->
+                <v-dialog v-model="dialogUnarchive" max-width="500px">
+                  <v-card>
+                    <v-card-title
+                      class="justify-center"
+                      style="word-break: normal"
+                    >
+                      <div>Are you sure you want to open this analysis?</div>
+                    </v-card-title>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="closeUnarchiveDialog"
+                        >Cancel</v-btn
+                      >
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="unarchiveAnalysisConfirm"
+                        >OK</v-btn
+                      >
+                      <v-spacer></v-spacer>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
               </v-toolbar>
             </template>
             <!-- Custom Field Rendering -->
@@ -133,30 +159,68 @@
                   }}
                 </td>
                 <td>
-                  <v-icon small class="mr-2" @click="editAnalysis(item)">
-                    edit
-                  </v-icon>
+                  <v-tooltip bottom>
+                    <template #activator="{ on, attrs }">
+                      <v-icon
+                        small
+                        class="mr-2"
+                        v-bind="attrs"
+                        @click="editAnalysis(item)"
+                        v-on="on"
+                      >
+                        edit
+                      </v-icon>
+                    </template>
+                    <span>Edit</span>
+                  </v-tooltip>
                   <!-- If open show archive icon -->
-                  <v-icon
-                    v-if="item.state === 'Open'"
-                    small
-                    class="mr-2"
-                    @click="archiveAnalysis(item)"
-                  >
-                    archive
-                  </v-icon>
-                  <!-- If closed show unarchive icon -->
-                  <v-icon
-                    v-else
-                    small
-                    class="mr-2"
-                    @click="unarchiveAnalysis(item)"
-                  >
-                    unarchive
-                  </v-icon>
-                  <v-icon small class="mr-2" @click="deleteAnalysis(item)">
-                    delete
-                  </v-icon>
+                  <span v-if="item.state === 'Open'">
+                    <v-tooltip bottom>
+                      <template #activator="{ on, attrs }">
+                        <v-icon
+                          small
+                          v-bind="attrs"
+                          class="mr-2"
+                          v-on="on"
+                          @click="archiveAnalysis(item)"
+                        >
+                          archive
+                        </v-icon>
+                      </template>
+                      <span>Close</span>
+                    </v-tooltip>
+                  </span>
+                  <span v-else>
+                    <!-- If closed show unarchive icon -->
+                    <v-tooltip bottom>
+                      <template #activator="{ on, attrs }">
+                        <v-icon
+                          small
+                          v-bind="attrs"
+                          class="mr-2"
+                          v-on="on"
+                          @click="unarchiveAnalysis(item)"
+                        >
+                          unarchive
+                        </v-icon>
+                      </template>
+                      <span>Open</span>
+                    </v-tooltip>
+                  </span>
+                  <v-tooltip bottom>
+                    <template #activator="{ on, attrs }">
+                      <v-icon
+                        small
+                        v-bind="attrs"
+                        class="mr-2"
+                        v-on="on"
+                        @click="deleteAnalysis(item)"
+                      >
+                        delete
+                      </v-icon>
+                    </template>
+                    <span>Delete</span>
+                  </v-tooltip>
                 </td>
               </tr>
             </template>
@@ -204,6 +268,9 @@ export default {
     // Archive actions
     dialogArchive: false,
     archiveId: null,
+    // Unarchive actions
+    dialogUnarchive: false,
+    unarchiveId: null,
   }),
   head() {
     return {
@@ -239,8 +306,22 @@ export default {
     },
     async archiveAnalysisConfirm() {
       this.closeArchiveDialog();
-      const payload = { state: 1 };
+      const payload = { state: 2 };
       await this.$axios.patch(`/swot_analyses/${this.archiveId}`, payload);
+      this.$nuxt.refresh();
+    },
+    // Methods for unarchiving an analysis
+    closeUnarchiveDialog() {
+      this.dialogUnarchive = false;
+    },
+    unarchiveAnalysis(item) {
+      this.dialogUnarchive = true;
+      this.unarchiveId = item.id;
+    },
+    async unarchiveAnalysisConfirm() {
+      this.closeUnarchiveDialog();
+      const payload = { state: 1 };
+      await this.$axios.patch(`/swot_analyses/${this.unarchiveId}`, payload);
       this.$nuxt.refresh();
     },
   },

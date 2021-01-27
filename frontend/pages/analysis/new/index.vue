@@ -98,6 +98,8 @@ export default {
     ValidationObserver,
     ValidationProvider,
   },
+  // This route required authentication
+  middleware: "authenticated",
   data: () => ({
     // Current step
     id: null,
@@ -137,6 +139,16 @@ export default {
         );
         this.id = response.data.id;
         this.step++;
+
+        // Now we create the 4 quadrants for the analysis
+        // Iterate 1-4
+        for (const i of Array.from(new Array(4), (x, i) => i + 1)) {
+          const quadrant_payload = { q_type: parseInt(i) };
+          await this.$axios.post(
+            `/swot_analyses/${this.id}/quadrants/`,
+            quadrant_payload
+          );
+        }
       } catch (error) {
         this.$refs.observer.setErrors(error.response.data);
       }
