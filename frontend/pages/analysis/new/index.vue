@@ -77,8 +77,7 @@
                     depressed
                     color="third"
                     class="white--text"
-                    nuxt
-                    :to="{ path: '/analysis/', params: { id: id } }"
+                    :href="'/analysis/' + createdId"
                     >Start working</v-btn
                   >
                 </div>
@@ -99,6 +98,8 @@ export default {
     ValidationObserver,
     ValidationProvider,
   },
+  // This route required authentication
+  middleware: "authenticated",
   data: () => ({
     // Current step
     id: null,
@@ -108,7 +109,12 @@ export default {
       title: "",
       description: null,
     },
-  }), // Methods
+  }),
+  head() {
+    return {
+      title: "Create SWOT analysis",
+    };
+  },
   computed: {
     currentTitle() {
       switch (this.step) {
@@ -118,6 +124,9 @@ export default {
           return "Analysis creation successful";
       }
     },
+    createdId() {
+      return this.id;
+    },
   },
   methods: {
     // Create SWOT Analysis
@@ -125,15 +134,23 @@ export default {
       this.loading = true;
       try {
         const response = await this.$axios.post(
-          "/swot_analysis/",
+          "/swot_analyses/",
           this.payload
         );
         this.id = response.data.id;
-        console.log(this.id);
         this.step++;
+
+        // Now we create the 4 quadrants for the analysis
+        // Iterate 1-4
+        for (const i of Array.from(new Array(4), (x, i) => i + 1)) {
+          const quadrant_payload = { q_type: parseInt(i) };
+          await this.$axios.post(
+            `/swot_analyses/${this.id}/quadrants/`,
+            quadrant_payload
+          );
+        }
       } catch (error) {
-        // Email needs manual set
-        console.log(error);
+        this.$refs.observer.setErrors(error.response.data);
       }
       this.loading = false;
     },

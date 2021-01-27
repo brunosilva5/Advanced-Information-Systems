@@ -43,7 +43,7 @@ export default {
   plugins: [{ src: "~/plugins/vee-validate", ssr: true }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [{ path: "~/components", global: true }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [

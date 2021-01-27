@@ -10,10 +10,6 @@
         @click="drawer = !drawer"
       />
 
-      <v-app-bar-title class="white--text">
-        <h2>{{ currentName }}</h2>
-      </v-app-bar-title>
-
       <v-spacer></v-spacer>
 
       <v-menu left bottom offset-y v-if="$auth.loggedIn">

@@ -26,14 +26,13 @@ class SWOTAnalysis(models.Model):
     starting_date = models.DateTimeField(_("Creation date"), auto_now_add=True)
 
     # Define the possible states of the analysis
-    class States(models.IntegerChoices):
-        IN_PROGRESS = 1, _("In progress")
+    class SWOTAnalysisStates(models.IntegerChoices):
+        OPEN = 1, _("Open")
         CLOSED = 2, _("Closed")
-        ARCHIVED = 3, _("Archived")
 
     state = models.IntegerField(
-        choices=States.choices,
-        default=States.IN_PROGRESS,
+        choices=SWOTAnalysisStates.choices,
+        default=SWOTAnalysisStates.OPEN,
     )
 
     class Meta:
@@ -41,4 +40,11 @@ class SWOTAnalysis(models.Model):
         verbose_name_plural = _("SWOT analyses")
         # Make each user have unique analyses titles
         # For more info consult requirements - RFN7
-        unique_together = ["user", "title"]
+        constraints = [
+            # Ensure that each analysis does not
+            # have repeated quadrants
+            models.UniqueConstraint(
+                fields=["user", "title"],
+                name="unique_analysis",
+            ),
+        ]

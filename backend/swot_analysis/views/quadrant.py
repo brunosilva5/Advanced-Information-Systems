@@ -1,34 +1,94 @@
-from rest_framework import permissions
-from rest_framework import generics
+"""
+Module containing all the endpoints related to Quadrant model
+"""
+from rest_framework import permissions, viewsets, status
 from rest_framework.response import Response
-from rest_framework import status
-from rest_framework import mixins
+from django.shortcuts import get_object_or_404
+from rest_framework.exceptions import ValidationError
+from django.db import IntegrityError
+
 from ..serializers import QuadrantSerializer
 
+from ..models import Quadrant, SWOTAnalysis
 
-class QuadrantView(
-    mixins.RetrieveModelMixin,
-    generics.GenericAPIView,
-):
+
+class QuadrantViewSet(viewsets.ViewSet):
     """
-    View for operations on a analysis quadrant.
-    * Requires Authenticated User
+    Viewset to manage Quadrants of a particular SWOTAnalysis,
+    for the currently authenticated user.
     """
 
-    permission_classes = [permissions.IsAuthenticated]
-
+    # Serializer class of this view
     serializer_class = QuadrantSerializer
+    # Queryset of this view
+    queryset = Quadrant.objects.all()
+    # Permission classes of this view
+    permission_classes = [
+        # Only allow authenticated users
+        permissions.IsAuthenticated,
+    ]
 
-    def post(self, request, *args, **kwargs):
+    def get_queryset(self):
         """
-        POST method to create an SWOTAnalysis for currently logged in user.
+        This view should only return quadrants a particular SWOTAnalysis,
+        that has the primary key in url.
         """
-        # need to pass the request in context,
-        # so the serializer can acess current user
-        serializer = QuadrantSerializer(
-            data=request.data,
+        # https://github.com/axnsan12/drf-yasg/issues/333
+        if getattr(self, "swagger_fake_view", False):
+            # queryset just for schema generation metadata
+            return Quadrant.objects.none()
+
+        # Grab analysis id
+        analysis_id = self.kwargs["swot_analysis_pk"]
+        # First we get the analysis by id and belonging to current user
+        analysis = get_object_or_404(
+            SWOTAnalysis.objects.filter(user=self.request.user),
+            pk=analysis_id,
         )
+
+        # Now we return all the quadrants of the found analysis
+        return analysis.quadrants
+
+    def list(self, request, swot_analysis_pk):
+        """
+        Method for listing the quadrants of an analysis
+        """
+        queryset = self.get_queryset()
+        serializer = QuadrantSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def create(self, request, swot_analysis_pk):
+        """
+        Method for creating a quadrant for a particular analysis
+        of the currently authenticated user.
+        """
+        # Add analysis key to request
+        data = request.data
+        data.update({"analysis": swot_analysis_pk})
+        serializer = QuadrantSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            try:
+                serializer.save()
+                return Response(
+                    serializer.data,
+                    status=status.HTTP_201_CREATED,
+                )
+            except IntegrityError:  # noqa (The message varies depending on the database engine)
+                raise ValidationError(
+                    {
+                        "q_type": [
+                            "You already have a quadrant of this type.",
+                        ],
+                    }
+                )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def retrieve(self, request, pk=None, swot_analysis_pk=None):
+        """
+        Returns a particular quadrant of a specific analysis
+        (of the currently authenticated user)
+        by given primary key.
+        """
+        queryset = self.get_queryset().get(pk=pk)
+        serializer = QuadrantSerializer(queryset)
+        return Response(serializer.data)
