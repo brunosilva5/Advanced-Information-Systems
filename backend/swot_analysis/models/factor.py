@@ -33,7 +33,7 @@ class Factor(models.Model):
 
         UNIMPORTANT = 0, _("Unimportant")
         OF_LITTLE_IMPORTANCE = 1, _("Of Little Importance")
-        MODERATELY_IMPORTANT = 2, _("Moderately Important ")
+        MODERATELY_IMPORTANT = 2, _("Moderately Important")
         IMPORTANT = 3, _("Important")
         VERY_IMPORTANT = 4, _("Very Important")
 
