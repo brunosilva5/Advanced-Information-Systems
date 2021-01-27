@@ -21,7 +21,7 @@ class Factor(models.Model):
         STRENGTH = 0, _("Strength")
         WEAKNESS = 1, _("Weakness")
         THREAT = 2, _("Threat")
-        OPPORTUNITY = 4, _("Opportunity")
+        OPPORTUNITY = 3, _("Opportunity")
 
     # Possible types of importance.
     # Designed according to:
