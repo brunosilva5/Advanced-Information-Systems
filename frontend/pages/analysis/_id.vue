@@ -20,7 +20,7 @@
         <v-tab-item v-for="item in barItems" :key="item.id">
           <v-card flat>
             <v-card-text>
-              <component :is="item.component_name" v-bind="Props"></component>
+              <component :is="item.component_name"></component>
             </v-card-text>
           </v-card>
         </v-tab-item>
@@ -54,30 +54,16 @@ export default {
     barItems: [
       {
         name: "Internal factors",
-        component_name: "FactorsTable",
+        component_name: "InternalFactorsTable",
       },
       {
         name: "External factors",
-        component_location: "ExternalFactorsTable",
+        component_name: "ExternalFactorsTable",
       },
-      { name: "SWOT Matrix" },
+      { name: "SWOT Matrix", component_name: "SWOTMatrix" },
       { name: "Data crossing" },
       { name: "Graphs" },
     ],
   }),
-  computed: {
-    Props: function () {
-      let props = null;
-      // If internal table
-      if (this.currentTab === 0) {
-        props = {
-          id: this.Analysis.id,
-          quadrant1Qtype: "Strengths",
-          quadrant2Qtype: "Weaknesses",
-        };
-      }
-      return props;
-    },
-  },
 };
 </script>

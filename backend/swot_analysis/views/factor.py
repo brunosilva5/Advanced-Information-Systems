@@ -72,7 +72,7 @@ class FactorViewSet(viewsets.ViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def destroy(self, request, pk=None):
+    def destroy(self, request, swot_analysis_pk, quadrant_pk, pk=None):
         """
         Method for deleting a factor for a particular quadrant
         of a particular analysis of the currently authenticated user.

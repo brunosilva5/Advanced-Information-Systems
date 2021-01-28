@@ -1,0 +1,57 @@
+<template>
+  <v-card>
+    <v-card-title class="pa-0">
+      <v-app-bar dense flat :class="color + ' lighten-1'">
+        <div class="h2 font-weight-light">{{ title }}</div>
+        <v-spacer></v-spacer>
+        <div class="h2 font-weight-light">{{ totalScore }}</div>
+      </v-app-bar>
+    </v-card-title>
+    <v-data-table
+      :headers="headers"
+      :items="factors"
+      hide-default-footer
+      hide-default-header
+    >
+      <!-- Custom Field Rendering -->
+      <template #item="{ item }">
+        <tr>
+          <td>{{ item.description }}</td>
+          <td class="font-weight-light">
+            <v-row justify="end" class="pa-3"> {{ item.score }} </v-row>
+          </td>
+        </tr>
+      </template>
+    </v-data-table>
+  </v-card>
+</template>
+<script>
+export default {
+  props: {
+    factors: {
+      type: Array,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    totalScore: {
+      type: Number,
+      required: true,
+    },
+    color: {
+      type: String,
+      required: true,
+    },
+  },
+  data: () => ({
+    headers: [{ text: "" }, { text: "" }],
+  }),
+  methods: {
+    getColor() {
+      return this.color + "lighten-1";
+    },
+  },
+};
+</script>
