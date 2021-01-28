@@ -6,8 +6,10 @@ from rest_framework.response import Response
 from swot_analysis.serializers.factor_serializer import FactorSerializer
 from rest_framework import viewsets
 from django.shortcuts import get_object_or_404
+from django.db import IntegrityError
+from rest_framework.exceptions import ValidationError
 
-from ..models import Factor, SWOTAnalysis
+from ..models import Factor, SWOTAnalysis, Quadrant
 
 
 class FactorViewSet(viewsets.ViewSet):
@@ -68,8 +70,25 @@ class FactorViewSet(viewsets.ViewSet):
         data.update({"quadrant": quadrant_pk})
         serializer = FactorSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            try:
+                serializer.save()
+                return Response(
+                    serializer.data,
+                    status=status.HTTP_201_CREATED,
+                )
+            except IntegrityError:
+                quadrant = get_object_or_404(
+                    Quadrant.objects.all(),
+                    pk=quadrant_pk,
+                ).get_q_type_display()
+                raise ValidationError(
+                    {
+                        "description": [
+                            f"Quadrant {quadrant} already has a factor with this description.",  # noqa
+                        ],
+                    }
+                )
+
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, swot_analysis_pk, quadrant_pk, pk=None):

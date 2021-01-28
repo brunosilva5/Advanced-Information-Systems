@@ -74,3 +74,15 @@ class Factor(models.Model):
         """
         # We multiply current importance by 2.5
         return self.importance * 2.5
+
+    class Meta:
+
+        # Make each quadrant have unique factors
+        constraints = [
+            # Ensure that each quadrant does not
+            # have repeated factors
+            models.UniqueConstraint(
+                fields=["quadrant", "description"],
+                name="unique_factor",
+            ),
+        ]
