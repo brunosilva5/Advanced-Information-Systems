@@ -161,15 +161,17 @@
                 <td>
                   <v-tooltip bottom>
                     <template #activator="{ on, attrs }">
-                      <v-icon
-                        small
-                        class="mr-2"
-                        v-bind="attrs"
-                        @click="editAnalysis(item)"
-                        v-on="on"
-                      >
-                        edit
-                      </v-icon>
+                      <v-btn plain icon :to="'/analysis/edit/' + item.id">
+                        <v-icon
+                          small
+                          nuxt
+                          class="mr-2"
+                          v-bind="attrs"
+                          v-on="on"
+                        >
+                          edit
+                        </v-icon>
+                      </v-btn>
                     </template>
                     <span>Edit</span>
                   </v-tooltip>
