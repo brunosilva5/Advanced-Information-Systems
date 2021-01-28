@@ -42,7 +42,7 @@
           </v-chip>
         </td>
         <td>
-          {{ item.score }}
+          {{ parseFloat(item.score).toString() }}
         </td>
         <!-- Only render delete action if analysis is open -->
         <td v-if="canUserEdit">
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import FactorForm from "~/components/FactorForm";
+import FactorForm from "~/components/FactorsTables/FactorForm";
 
 export default {
   components: {

@@ -5,7 +5,7 @@
   />
 </template>
 <script>
-import BaseFactorsTable from "~/components/BaseFactorsTable";
+import BaseFactorsTable from "~/components/FactorsTables/BaseFactorsTable";
 export default {
   components: { BaseFactorsTable },
   data: () => ({

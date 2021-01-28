@@ -78,6 +78,7 @@ export default {
       },
       { name: "SWOT Matrix", component_name: "SWOTMatrix" },
       { name: "Graphs", component_name: "Graphs" },
+      { name: "Recommendations", component_name: "Recommendations" },
     ],
     closedAnalysisWarningMessage:
       "Warning: This analysis is closed. If you wish to make any changes please reopen it.",

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import SmallTable from "~/components/SmallTable";
+import SmallTable from "~/components/SWOTMatrix/SmallTable";
 export default {
   components: {
     SmallTable,
