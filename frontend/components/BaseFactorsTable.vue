@@ -4,7 +4,10 @@
       <v-toolbar flat>
         <v-toolbar-title>Create Factor</v-toolbar-title>
         <v-divider class="mx-4" inset vertical></v-divider>
-        <FactorForm :possible-classifications="possibleClassifications" />
+        <!-- Only render create form is analysis is open -->
+        <div v-if="canUserEdit">
+          <FactorForm :possible-classifications="possibleClassifications" />
+        </div>
         <v-dialog v-model="dialogDelete" max-width="500px">
           <v-card>
             <v-card-title class="justify-center" style="word-break: normal">
@@ -41,7 +44,8 @@
         <td>
           {{ item.score }}
         </td>
-        <td>
+        <!-- Only render delete action if analysis is open -->
+        <td v-if="canUserEdit">
           <v-tooltip bottom>
             <template #activator="{ on, attrs }">
               <v-icon
@@ -81,23 +85,42 @@ export default {
       required: true,
     },
   },
-
   data: () => ({
-    headers: [
+    default_headers: [
       { text: "Description", value: "description" },
       { text: "Classification", value: "classification" },
       { text: "Importance", value: "importance" },
       { text: "Score", value: "score" },
-      { text: "Actions", value: "actions", sortable: false },
     ],
     // Delete actions
     dialogDelete: false,
     deleteFactorInstance: null,
+    // Boolean variable to check if user can edit the analysis
+    canUserEdit: false,
   }),
+  async fetch() {
+    // Fetch API to check if analysis if open or closed
+    const analysis = await this.$axios
+      .get(`/swot_analyses/${this.analysisId}/`)
+      .then((res) => res.data);
+    this.canUserEdit = analysis.state == "Open";
+  },
   computed: {
     // Get analysis id from url
     analysisId() {
       return this.$route.params.id;
+    },
+    headers() {
+      // Copy array
+      const new_headers = [...this.default_headers];
+      if (this.canUserEdit) {
+        new_headers.push({
+          text: "Actions",
+          value: "actions",
+          sortable: false,
+        });
+      }
+      return new_headers;
     },
   },
   methods: {
@@ -122,7 +145,6 @@ export default {
     },
     async deleteFactorConfirm() {
       this.closeDeleteDialog();
-      console.log("Deleting factor");
       await this.$axios.delete(
         `/swot_analyses/${this.analysisId}/quadrants/${this.deleteFactorInstance.quadrant}/factors/${this.deleteFactorInstance.id}`
       );

@@ -2,14 +2,13 @@
   <v-card>
     <v-card-title class="pa-0">
       <v-app-bar dense flat :class="color + ' lighten-1'">
-        <div class="h2 font-weight-light">{{ title }}</div>
+        <div class="h2 font-weight-light">{{ quadrant.title }}</div>
         <v-spacer></v-spacer>
-        <div class="h2 font-weight-light">{{ totalScore }}</div>
+        <div class="h2 font-weight-light">{{ quadrant.total_score }}</div>
       </v-app-bar>
     </v-card-title>
     <v-data-table
-      :headers="headers"
-      :items="factors"
+      :items="quadrant.factors"
       hide-default-footer
       hide-default-header
     >
@@ -28,29 +27,13 @@
 <script>
 export default {
   props: {
-    factors: {
-      type: Array,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    totalScore: {
-      type: Number,
+    quadrant: {
+      type: Object,
       required: true,
     },
     color: {
       type: String,
       required: true,
-    },
-  },
-  data: () => ({
-    headers: [{ text: "" }, { text: "" }],
-  }),
-  methods: {
-    getColor() {
-      return this.color + "lighten-1";
     },
   },
 };

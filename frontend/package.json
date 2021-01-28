@@ -13,10 +13,12 @@
   "dependencies": {
     "@nuxtjs/auth-next": "5.0.0-1611071776.3646657",
     "@nuxtjs/axios": "^5.12.5",
+    "apexcharts": "^3.23.1",
     "core-js": "^3.8.2",
     "lazy-line-painter": "^1.9.6",
     "nuxt": "^2.14.12",
-    "vee-validate": "^3.4.5"
+    "vee-validate": "^3.4.5",
+    "vue-apexcharts": "^1.6.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",

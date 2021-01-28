@@ -7,7 +7,23 @@
         </h1>
       </v-card-title>
       <v-card-subtitle class="text-center">
+        <div>
+          {{
+            new Date(Analysis.starting_date).toLocaleDateString("en-en", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })
+          }}
+        </div>
+        <v-divider class="my-5"></v-divider>
         {{ Analysis.description }}
+        <!-- If user can't edit this analysis show warning message -->
+
+        <div v-if="!canUserEdit" class="red--text lighten-4">
+          <v-icon class="red--text lighten-4">new_releases</v-icon>
+          {{ closedAnalysisWarningMessage }}
+        </div>
       </v-card-subtitle>
 
       <v-tabs v-model="currentTab" color="second" grow>
@@ -61,9 +77,16 @@ export default {
         component_name: "ExternalFactorsTable",
       },
       { name: "SWOT Matrix", component_name: "SWOTMatrix" },
-      { name: "Data crossing" },
-      { name: "Graphs" },
+      { name: "Graphs", component_name: "Graphs" },
     ],
+    closedAnalysisWarningMessage:
+      "Warning: This analysis is closed. If you wish to make any changes please reopen it.",
   }),
+  computed: {
+    // Check if user can edit the analysis
+    canUserEdit() {
+      return this.Analysis.state == "Open";
+    },
+  },
 };
 </script>

@@ -4,49 +4,29 @@
     <v-row>
       <!-- Strengths -->
       <v-col cols="12" md="6">
-        <SWOTMatrixTable
-          title="Strengths"
-          :factors="getQuadrantFactors('Strengths')"
-          :total-score="getQuadrantTotalScore('Strengths')"
-          color="green"
-        />
+        <SmallTable :quadrant="strengthsQuadrant" color="green" />
       </v-col>
       <v-col cols="12" md="6">
-        <SWOTMatrixTable
-          title="Weaknesses"
-          :factors="getQuadrantFactors('Weaknesses')"
-          :total-score="getQuadrantTotalScore('Weaknesses')"
-          color="red"
-        />
+        <SmallTable :quadrant="weaknessesQuadrant" color="red" />
       </v-col>
     </v-row>
     <v-row>
       <!-- Strengths -->
       <v-col cols="12" md="6">
-        <SWOTMatrixTable
-          title="Opportunities"
-          :factors="getQuadrantFactors('Opportunities')"
-          :total-score="getQuadrantTotalScore('Opportunities')"
-          color="green"
-        />
+        <SmallTable :quadrant="opportunitiesQuadrant" color="green" />
       </v-col>
       <v-col cols="12" md="6">
-        <SWOTMatrixTable
-          title="Threats"
-          :factors="getQuadrantFactors('Threats')"
-          :total-score="getQuadrantTotalScore('Threats')"
-          color="red"
-        />
+        <SmallTable :quadrant="threatsQuadrant" color="red" />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import SWOTMatrixTable from "~/components/SWOTMatrixTable";
+import SmallTable from "~/components/SmallTable";
 export default {
   components: {
-    SWOTMatrixTable,
+    SmallTable,
   },
   data: () => ({
     quadrants: [],
@@ -54,30 +34,37 @@ export default {
   async fetch() {
     // Get the quadrants of an analysis
     this.quadrants = await this.$axios
-      .get(`/swot_analyses/${this.analysisId}/quadrants/`)
+      .get(`/swot_analyses/${this.$route.params.id}/quadrants/`)
       .then((res) => res.data);
   },
+
   computed: {
-    // Get analysis id from url
-    analysisId() {
-      return this.$route.params.id;
+    strengthsQuadrant() {
+      return this.getQuadrant("Strengths");
+    },
+    weaknessesQuadrant() {
+      return this.getQuadrant("Weaknesses");
+    },
+    opportunitiesQuadrant() {
+      return this.getQuadrant("Opportunities");
+    },
+    threatsQuadrant() {
+      return this.getQuadrant("Threats");
     },
   },
   methods: {
     // Returns a quadrant by name
-    getQuadrantFactors(name) {
-      return this.quadrants
+    getQuadrant(name) {
+      const factors = this.quadrants
         .filter((item) => item.q_type === name)[0]
         .factors.sort(function (a, b) {
           return b.score - a.score;
         });
-    },
-    getQuadrantTotalScore(name) {
-      return this.quadrants.filter((item) => item.q_type === name)[0]
+      const score = this.quadrants.filter((item) => item.q_type === name)[0]
         .total_score;
+
+      return { title: name, factors: factors, total_score: score };
     },
   },
 };
 </script>
-
-<style></style>
