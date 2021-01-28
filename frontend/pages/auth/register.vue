@@ -213,6 +213,9 @@ export default {
       confirm_password: "",
     },
   }),
+  head: {
+    title: "Register",
+  },
   computed: {
     currentTitle() {
       switch (this.step) {

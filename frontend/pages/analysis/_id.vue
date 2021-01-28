@@ -83,6 +83,11 @@ export default {
     closedAnalysisWarningMessage:
       "Warning: This analysis is closed. If you wish to make any changes please reopen it.",
   }),
+  head() {
+    return {
+      title: this.Analysis.title,
+    };
+  },
   computed: {
     // Check if user can edit the analysis
     canUserEdit() {

@@ -276,7 +276,7 @@ export default {
   }),
   head() {
     return {
-      title: "Analysis dashboard",
+      title: "Analysis",
     };
   },
 

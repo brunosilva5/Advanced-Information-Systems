@@ -82,33 +82,33 @@ export default {
         description:
           "In this part of the spreadsheet you will be able to view an overview of your score for strengths, weaknesses, opportunities and threats. From this view, you will have the return of the spreadsheet on what time the company is going (development, maintenance, growth and survival). In addition to the indicators, also see the list with all the strengths, weaknesses, threats and opportunities ranked according to your score.",
       },
-      {
-        title: "Data crossing",
-        description:
-          "Once your internal and external factors have been defined, it is time to cross-check the data by combining your strengths and weaknesses with threats and opportunities. You can draw up an action plan for each combination.",
-        cards: [
-          {
-            title: "Strengths + Opportunities",
-            body:
-              "The spreadsheet will show your 4 main strengths so that you can select an opportunity to combine. Draw a plan to get the best out of this combination.",
-          },
-          {
-            title: "Strengths + Threats",
-            body:
-              "Your strength can be weakened by a threat. Select a threat that could damage your strength and define a containment plan to prevent problems from happening.",
-          },
-          {
-            title: "Weaknesses + Opportunities",
-            body:
-              "A weakness of yours can be minimized by some opportunity. Make this combination and draw up a plan on how to take advantage of an opportunity by minimizing a weakness.",
-          },
-          {
-            title: "Weaknesses + Threats",
-            body:
-              "Weaknesses and threats represent the greatest risk that a company can take. Combine some threats with your weaknesses and devise a plan to contain possible problems.",
-          },
-        ],
-      },
+      // {
+      //   title: "Data crossing",
+      //   description:
+      //     "Once your internal and external factors have been defined, it is time to cross-check the data by combining your strengths and weaknesses with threats and opportunities. You can draw up an action plan for each combination.",
+      //   cards: [
+      //     {
+      //       title: "Strengths + Opportunities",
+      //       body:
+      //         "The spreadsheet will show your 4 main strengths so that you can select an opportunity to combine. Draw a plan to get the best out of this combination.",
+      //     },
+      //     {
+      //       title: "Strengths + Threats",
+      //       body:
+      //         "Your strength can be weakened by a threat. Select a threat that could damage your strength and define a containment plan to prevent problems from happening.",
+      //     },
+      //     {
+      //       title: "Weaknesses + Opportunities",
+      //       body:
+      //         "A weakness of yours can be minimized by some opportunity. Make this combination and draw up a plan on how to take advantage of an opportunity by minimizing a weakness.",
+      //     },
+      //     {
+      //       title: "Weaknesses + Threats",
+      //       body:
+      //         "Weaknesses and threats represent the greatest risk that a company can take. Combine some threats with your weaknesses and devise a plan to contain possible problems.",
+      //     },
+      //   ],
+      // },
       {
         title: "Graphics",
         description:
@@ -119,12 +119,15 @@ export default {
         description:
           "This spreadsheet will evaluate all the data you have filled in and will return with important tips for your SWOT analysis. This return will be displayed by balancing strengths, weaknesses, opportunities and threats.",
       },
-      {
-        title: "Printable report",
-        description:
-          "Print only what matters. This part generates a report formatted for printing on 7 A4 pages with its action plan for all combinations of strengths, weaknesses, opportunities and threats. In addition, have the graphics, the hierarchical list, the favorability index and the tips.",
-      },
+      // {
+      //   title: "Printable report",
+      //   description:
+      //     "Print only what matters. This part generates a report formatted for printing on 7 A4 pages with its action plan for all combinations of strengths, weaknesses, opportunities and threats. In addition, have the graphics, the hierarchical list, the favorability index and the tips.",
+      // },
     ],
   }),
+  head: {
+    title: "Help Center",
+  },
 };
 </script>

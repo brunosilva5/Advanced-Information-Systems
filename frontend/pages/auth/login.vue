@@ -100,6 +100,9 @@ export default {
       password: "",
     },
   }),
+  head: {
+    title: "Login",
+  },
   // Methods
   methods: {
     // Login user
