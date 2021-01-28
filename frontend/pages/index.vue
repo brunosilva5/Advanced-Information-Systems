@@ -89,7 +89,13 @@
               <v-icon class="ma-2"> speed </v-icon>
               Get Started
             </v-btn>
-            <v-btn nuxt depressed color="third white--text" x-large to="/faq">
+            <v-btn
+              nuxt
+              depressed
+              color="third white--text"
+              x-large
+              to="/help-center"
+            >
               <v-icon class="ma-2"> info </v-icon>
               Learn More
             </v-btn>
